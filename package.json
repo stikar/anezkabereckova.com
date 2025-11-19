@@ -32,7 +32,7 @@
     "react-loading-overlay": "^1.0.1"
   },
   "devDependencies": {
-    "@lingui/cli": "^3.10.2",
+    "@lingui/cli": "^5.6.0",
     "@lingui/macro": "^3.3.0",
     "babel-plugin-macros": "^3.0.0",
     "babel-plugin-module-resolver": "^4.0.0",
