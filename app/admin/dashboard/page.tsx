@@ -30,8 +30,28 @@ export default function AdminDashboard() {
   const router = useRouter()
 
   React.useEffect(() => {
+    async function checkAuth() {
+      const { data: { session } } = await supabase.auth.getSession()
+      if (!session) {
+        router.push('/admin')
+        return
+      }
+
+      try {
+        const approved = await isAdminApproved(session.user.id)
+        if (!approved) {
+          await supabase.auth.signOut()
+          router.push('/admin')
+          return
+        }
+        setUser(session.user)
+      } catch (error) {
+        console.error('Auth check failed:', error)
+        router.push('/admin')
+      }
+    }
     checkAuth()
-  }, [])
+  }, [router])
 
   React.useEffect(() => {
     if (user) {
@@ -43,26 +63,7 @@ export default function AdminDashboard() {
     }
   }, [user, activeTab])
 
-  async function checkAuth() {
-    const { data: { session } } = await supabase.auth.getSession()
-    if (!session) {
-      router.push('/admin')
-      return
-    }
 
-    try {
-      const approved = await isAdminApproved(session.user.id)
-      if (!approved) {
-        await supabase.auth.signOut()
-        router.push('/admin')
-        return
-      }
-      setUser(session.user)
-    } catch (error) {
-      console.error('Auth check failed:', error)
-      router.push('/admin')
-    }
-  }
 
   async function loadImages() {
     setLoading(true)
@@ -216,8 +217,8 @@ export default function AdminDashboard() {
           <button
             onClick={() => setActiveTab('gallery')}
             className={`pb-2 px-1 text-sm font-medium transition-colors ${activeTab === 'gallery'
-                ? 'border-b-2 border-primary text-primary'
-                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
+              ? 'border-b-2 border-primary text-primary'
+              : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
               }`}
           >
             Gallery Management
@@ -225,8 +226,8 @@ export default function AdminDashboard() {
           <button
             onClick={() => setActiveTab('users')}
             className={`pb-2 px-1 text-sm font-medium transition-colors ${activeTab === 'users'
-                ? 'border-b-2 border-primary text-primary'
-                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
+              ? 'border-b-2 border-primary text-primary'
+              : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
               }`}
           >
             User Approval
