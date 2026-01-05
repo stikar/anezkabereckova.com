@@ -1,0 +1,48 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - production
+      - dev
+  push:
+    branches:
+      - dev
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Build
+        run: npm run build
+
+      - name: Check build output
+        run: |
+          if [ ! -d "out" ]; then
+            echo "Build output directory 'out' not found"
+            exit 1
+          fi
+          if [ ! -f "out/index.html" ]; then
+            echo "index.html not found in build output"
+            exit 1
+          fi
+          echo "Build output verified successfully"
