@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import Image from 'next/image'
-import { Dialog, DialogContent } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'
 import {
   Carousel,
   CarouselContent,
@@ -130,6 +130,7 @@ export function PhotoGallery() {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-[100vw] max-h-[100vh] w-full h-full p-0 border-0 bg-black/95">
           <div className="relative w-full h-full flex items-center justify-center">
+            <DialogTitle className="sr-only">Photo Gallery</DialogTitle>
             {/* Close button */}
             <button
               onClick={() => setOpen(false)}
