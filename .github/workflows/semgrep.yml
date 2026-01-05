@@ -1,0 +1,60 @@
+name: Semgrep
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  semgrep:
+    name: Scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: '🤌 Checkout'
+        uses: actions/checkout@v6
+
+      - name: '🔍 Run Semgrep'
+        id: semgrep
+        continue-on-error: true
+        run: |
+          set +e
+          # Pull image first to avoid pull output in results
+          docker pull semgrep/semgrep:latest > /dev/null 2>&1
+
+          # Run semgrep and capture output
+          docker run --rm -v "${PWD}:/src" semgrep/semgrep:latest semgrep scan --config auto --error --text 2>&1 | tee semgrep-output.txt
+          EXIT_CODE=${PIPESTATUS[0]}
+          echo "Exit code: $EXIT_CODE"
+          echo "exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
+
+          # Always capture output for PR comment
+          {
+            echo 'findings<<EOF'
+            cat semgrep-output.txt
+            echo 'EOF'
+          } >> $GITHUB_OUTPUT
+
+      - name: '💬 Post PR Comment'
+        if: github.event_name == 'pull_request' && steps.semgrep.outputs.exit_code != '0'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: semgrep
+          recreate: true
+          message: |
+            ## 🔍 Semgrep Security Findings
+
+            ```
+            ${{ steps.semgrep.outputs.findings }}
+            ```
+
+      - name: '❌ Fail if findings'
+        if: steps.semgrep.outputs.exit_code != '0'
+        run: |
+          echo "Failing due to exit code: ${{ steps.semgrep.outputs.exit_code }}"
+          exit 1
