@@ -113,7 +113,7 @@ export function PhotoGallery() {
           <button
             key={image.id}
             onClick={() => openLightbox(index)}
-            className="aspect-[3/4] bg-gray-200 dark:bg-gray-800 overflow-hidden hover:opacity-80 transition-opacity cursor-pointer relative group"
+            className="aspect-[3/4] bg-gray-200 dark:bg-gray-800 overflow-hidden hover:opacity-80 transition-opacity cursor-pointer relative group focus:outline-none"
           >
             <Image
               src={getThumbnailUrl(image.storage_path)}
@@ -159,8 +159,8 @@ export function PhotoGallery() {
 
             {/* Image title */}
             {images[currentIndex]?.alt_text && (
-              <div className="absolute top-16 left-0 right-0 z-50 text-center">
-                <p className="text-white text-lg md:text-xl font-light tracking-wide px-4">
+              <div className="absolute bottom-4 left-0 right-0 z-50 text-center pointer-events-none">
+                <p className="text-white/90 text-sm font-normal tracking-wide px-12 drop-shadow-md">
                   {images[currentIndex].alt_text}
                 </p>
               </div>
@@ -169,7 +169,7 @@ export function PhotoGallery() {
             {/* Carousel */}
             <Carousel
               setApi={setApi}
-              className="w-full h-full"
+              className="w-full h-full focus:outline-none"
               opts={{
                 loop: true,
                 startIndex: currentIndex,
@@ -177,8 +177,8 @@ export function PhotoGallery() {
             >
               <CarouselContent className="h-full">
                 {images.map((image, index) => (
-                  <CarouselItem key={image.id} className="h-full flex items-center justify-center">
-                    <div className="relative w-full h-full max-w-7xl max-h-[90vh] mx-auto">
+                  <CarouselItem key={image.id} className="h-full flex items-center justify-center focus:outline-none">
+                    <div className="relative w-full h-full max-w-7xl max-h-[90vh] mx-auto focus:outline-none">
                       <Image
                         src={getFullImageUrl(image.storage_path)}
                         alt={image.alt_text}
