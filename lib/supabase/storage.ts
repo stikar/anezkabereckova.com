@@ -6,21 +6,26 @@ export const GALLERY_BUCKET = 'gallery-images'
  * Get public URL for an image with optional transformation
  * Use resize: 'contain' to ensure aspect ratio is preserved within the bounds.
  */
-export function getImageUrl(path: string, options?: {
+export function getImageUrl(
+  path: string,
+  options?: {
     width?: number
     height?: number
     quality?: number
-}) {
-    const { data } = supabase.storage.from(GALLERY_BUCKET).getPublicUrl(path, {
-        transform: options ? {
-            width: options.width,
-            height: options.height,
-            quality: options.quality,
-            resize: 'contain', // This ensures the aspect ratio is kept
-        } : undefined,
-    })
+  }
+) {
+  const { data } = supabase.storage.from(GALLERY_BUCKET).getPublicUrl(path, {
+    transform: options
+      ? {
+          width: options.width,
+          height: options.height,
+          quality: options.quality,
+          resize: 'contain', // This ensures the aspect ratio is kept
+        }
+      : undefined,
+  })
 
-    return data.publicUrl
+  return data.publicUrl
 }
 
 /**
@@ -29,11 +34,11 @@ export function getImageUrl(path: string, options?: {
  * without being cropped.
  */
 export function getThumbnailUrl(path: string) {
-    return getImageUrl(path, {
-        width: 600,
-        height: 800,
-        quality: 80,
-    })
+  return getImageUrl(path, {
+    width: 600,
+    height: 800,
+    quality: 80,
+  })
 }
 
 /**
@@ -41,10 +46,10 @@ export function getThumbnailUrl(path: string) {
  * Providing only 'width' also automatically preserves aspect ratio.
  */
 export function getFullImageUrl(path: string) {
-    return getImageUrl(path, {
-        width: 2000,
-        quality: 90,
-    })
+  return getImageUrl(path, {
+    width: 2000,
+    quality: 90,
+  })
 }
 
 /**
@@ -59,7 +64,7 @@ export async function uploadImage(file: File) {
     .from(GALLERY_BUCKET)
     .upload(filePath, file, {
       cacheControl: '3600',
-      upsert: false
+      upsert: false,
     })
 
   if (error) throw error
@@ -70,9 +75,7 @@ export async function uploadImage(file: File) {
  * Delete image from Supabase Storage
  */
 export async function deleteImage(path: string) {
-  const { error } = await supabase.storage
-    .from(GALLERY_BUCKET)
-    .remove([path])
+  const { error } = await supabase.storage.from(GALLERY_BUCKET).remove([path])
 
   if (error) throw error
 }

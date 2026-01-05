@@ -62,7 +62,7 @@ export async function addGalleryImage(
       alt_text: altText,
       display_order: newOrder,
       width,
-      height
+      height,
     })
     .select()
     .single()
@@ -99,10 +99,7 @@ export async function restoreGalleryImage(id: string) {
  * Permanently delete an image from the database
  */
 export async function permanentlyDeleteGalleryImage(id: string) {
-  const { error } = await supabase
-    .from('gallery_images')
-    .delete()
-    .eq('id', id)
+  const { error } = await supabase.from('gallery_images').delete().eq('id', id)
 
   if (error) throw error
 }
@@ -137,12 +134,10 @@ export async function updateImageAltText(id: string, altText: string) {
 export async function reorderImages(imageIds: string[]) {
   const updates = imageIds.map((id, index) => ({
     id,
-    display_order: index + 1
+    display_order: index + 1,
   }))
 
-  const { error } = await supabase
-    .from('gallery_images')
-    .upsert(updates)
+  const { error } = await supabase.from('gallery_images').upsert(updates)
 
   if (error) throw error
 }

@@ -18,7 +18,9 @@ export default function AdminLogin() {
   React.useEffect(() => {
     // Check if already logged in and approved
     const checkSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession()
+      const {
+        data: { session },
+      } = await supabase.auth.getSession()
       if (session) {
         // Check approval status
         const { data: profile } = await supabase
@@ -46,10 +48,11 @@ export default function AdminLogin() {
     setError('')
 
     try {
-      const { error: signInError, data } = await supabase.auth.signInWithPassword({
-        email,
-        password,
-      })
+      const { error: signInError, data } =
+        await supabase.auth.signInWithPassword({
+          email,
+          password,
+        })
 
       if (signInError) throw signInError
 
@@ -62,8 +65,8 @@ export default function AdminLogin() {
           .single()
 
         if (profileError) {
-          // If profile doesn't exist, it might be an old user. 
-          // We could auto-create one or just fail. 
+          // If profile doesn't exist, it might be an old user.
+          // We could auto-create one or just fail.
           // For now, let's assume if no profile, they are not approved or something is wrong.
           // However, to be safe for existing users (like the main admin), maybe we treat no-profile as approved OR create one?
           // The migration logic implies new users get a profile.
@@ -72,7 +75,9 @@ export default function AdminLogin() {
 
         if (!profile.is_approved) {
           await supabase.auth.signOut()
-          throw new Error('Your account is awaiting approval from an administrator.')
+          throw new Error(
+            'Your account is awaiting approval from an administrator.'
+          )
         }
 
         router.push('/admin/dashboard')
@@ -96,7 +101,10 @@ export default function AdminLogin() {
           </p>
         </div>
 
-        <form onSubmit={handleLogin} className="space-y-4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <form
+          onSubmit={handleLogin}
+          className="space-y-4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm"
+        >
           <div>
             <label htmlFor="email" className="block text-sm font-medium mb-2">
               Email
@@ -112,7 +120,10 @@ export default function AdminLogin() {
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium mb-2">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium mb-2"
+            >
               Password
             </label>
             <Input
@@ -136,7 +147,10 @@ export default function AdminLogin() {
           </Button>
 
           <div className="flex justify-between text-sm pt-4">
-            <Link href="/" className="text-gray-600 dark:text-gray-400 hover:underline">
+            <Link
+              href="/"
+              className="text-gray-600 dark:text-gray-400 hover:underline"
+            >
               ← Back to site
             </Link>
             <Link href="/admin/signup" className="text-primary hover:underline">

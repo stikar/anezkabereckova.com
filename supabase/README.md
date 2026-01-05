@@ -40,6 +40,7 @@ supabase db push
 ```
 
 **Install Supabase CLI:**
+
 ```bash
 npm install -g supabase
 ```
@@ -65,6 +66,7 @@ supabase migration new your_migration_name
 ```
 
 Or manually create a file in `supabase/migrations/` with format:
+
 ```
 YYYYMMDDHHMMSS_your_migration_name.sql
 ```
