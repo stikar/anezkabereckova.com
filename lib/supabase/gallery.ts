@@ -8,7 +8,7 @@ export async function getGalleryImages(): Promise<GalleryImage[]> {
     .from('gallery_images')
     .select('*')
     .is('deleted_at', null)
-    .order('display_order', { ascending: true })
+    .order('display_order', { ascending: false })
 
   if (error) {
     console.error('Error fetching gallery images:', error)
