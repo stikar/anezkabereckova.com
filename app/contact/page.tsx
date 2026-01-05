@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 export default function Contact() {
   return (
-    <div className="min-h-screen flex flex-col">
+    // Transition classes help make the switch between light/dark smoother
+    <div className="min-h-screen flex flex-col bg-white dark:bg-zinc-950 transition-colors duration-300">
       <header className="w-full">
         <div className="max-w-[1800px] mx-auto px-4 md:px-8 lg:px-12 pt-6 md:pt-8">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-xs md:text-sm tracking-widest uppercase hover:opacity-60 transition-opacity"
-            style={{ color: '#737373' }}
+            className="inline-flex items-center gap-2 text-xs md:text-sm tracking-widest uppercase hover:opacity-60 transition-opacity text-zinc-500 dark:text-zinc-400"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export default function Contact() {
           className="flex flex-col md:flex-row gap-12 md:gap-16 items-center w-full"
           style={{ maxWidth: '42rem' }}
         >
-          {/* Profile Image */}
+          {/* Profile Image - Grayscale removed */}
           <div className="w-64 h-80 md:w-72 md:h-96 relative flex-shrink-0">
             <Image
               src="/contact-selfie.jpeg"
@@ -49,32 +49,22 @@ export default function Contact() {
           <div className="space-y-8 flex-1">
             {/* Name and Title */}
             <div className="space-y-1">
-              <h1
-                className="font-serif text-4xl md:text-5xl tracking-wide"
-                style={{ color: '#0a0a0a' }}
-              >
+              <h1 className="font-serif text-4xl md:text-5xl tracking-wide text-zinc-900 dark:text-zinc-50">
                 Anežka Berecková
               </h1>
-              <p
-                className="font-sans text-xs tracking-[0.2em] uppercase"
-                style={{ color: '#737373' }}
-              >
+              <p className="font-sans text-xs tracking-[0.2em] uppercase text-zinc-500 dark:text-zinc-400">
                 Fashion Designer
               </p>
             </div>
 
             {/* Email Section */}
             <div className="space-y-2">
-              <h2
-                className="font-sans text-xs tracking-[0.2em] uppercase"
-                style={{ color: '#737373' }}
-              >
+              <h2 className="font-sans text-xs tracking-[0.2em] uppercase text-zinc-500 dark:text-zinc-400">
                 Email
               </h2>
               <a
                 href="mailto:contact@anezkabereckova.com"
-                className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity"
-                style={{ color: '#0a0a0a' }}
+                className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity text-zinc-900 dark:text-zinc-50"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,18 +86,14 @@ export default function Contact() {
 
             {/* LinkedIn Section */}
             <div className="space-y-2">
-              <h2
-                className="font-sans text-xs tracking-[0.2em] uppercase"
-                style={{ color: '#737373' }}
-              >
+              <h2 className="font-sans text-xs tracking-[0.2em] uppercase text-zinc-500 dark:text-zinc-400">
                 LinkedIn
               </h2>
               <a
                 href="https://www.linkedin.com/in/anežka-berecková-b8370828a/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity"
-                style={{ color: '#0a0a0a' }}
+                className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity text-zinc-900 dark:text-zinc-50"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -129,12 +115,8 @@ export default function Contact() {
             </div>
 
             {/* Divider */}
-            <div className="border-t border-gray-200 pt-6">
-              {/* Description */}
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: '#737373' }}
-              >
+            <div className="border-t border-zinc-200 dark:border-zinc-800 pt-6">
+              <p className="text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
                 For collaboration inquiries, press features, or collection
                 viewings, please reach out via email.
               </p>
@@ -146,7 +128,7 @@ export default function Contact() {
       <footer className="w-full mt-auto">
         <div className="max-w-[1800px] mx-auto px-6 py-6">
           <div className="flex items-center justify-center">
-            <p className="text-xs tracking-wider" style={{ color: '#737373' }}>
+            <p className="text-xs tracking-wider text-zinc-500 dark:text-zinc-400">
               © 2026 Anežka Berecková
             </p>
           </div>
