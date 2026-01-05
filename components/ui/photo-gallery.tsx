@@ -3,6 +3,7 @@
 import * as React from 'react'
 import Image from 'next/image'
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'
+import Fade from 'embla-carousel-fade'
 import {
   Carousel,
   CarouselContent,
@@ -35,6 +36,7 @@ export function PhotoGallery() {
   const [open, setOpen] = React.useState(false)
   const [currentIndex, setCurrentIndex] = React.useState(0)
   const [api, setApi] = React.useState<CarouselApi>()
+  const [imageDimensions, setImageDimensions] = React.useState<Record<string, { width: number; height: number }>>({})
 
   // Lock body scroll when lightbox is open
   React.useEffect(() => {
@@ -157,18 +159,12 @@ export function PhotoGallery() {
               {currentIndex + 1} / {images.length}
             </div>
 
-            {/* Image title */}
-            {images[currentIndex]?.alt_text && (
-              <div className="absolute bottom-4 left-0 right-0 z-50 text-center pointer-events-none">
-                <p className="text-white/90 text-sm font-normal tracking-wide px-12 drop-shadow-md">
-                  {images[currentIndex].alt_text}
-                </p>
-              </div>
-            )}
+
 
             {/* Carousel */}
             <Carousel
               setApi={setApi}
+              plugins={[Fade()]}
               className="w-full h-full focus:outline-none"
               opts={{
                 loop: true,
@@ -177,17 +173,32 @@ export function PhotoGallery() {
             >
               <CarouselContent className="h-full">
                 {images.map((image, index) => (
-                  <CarouselItem key={image.id} className="h-full flex items-center justify-center focus:outline-none">
-                    <div className="relative w-full h-full max-w-7xl max-h-[90vh] mx-auto focus:outline-none">
-                      <Image
-                        src={getFullImageUrl(image.storage_path)}
-                        alt={image.alt_text}
-                        fill
-                        className="object-contain"
-                        sizes="100vw"
-                        priority={index === currentIndex}
-                      />
-                    </div>
+                  <CarouselItem key={image.id} className="h-full flex flex-col items-center justify-center p-4 focus:outline-none">
+                    <Image
+                      src={getFullImageUrl(image.storage_path)}
+                      alt={image.alt_text}
+                      width={image.width || imageDimensions[image.id]?.width || 1200}
+                      height={image.height || imageDimensions[image.id]?.height || 800}
+                      className="max-w-full max-h-[85vh] w-auto h-auto object-contain"
+                      priority={index === currentIndex}
+                      onLoad={(e) => {
+                        const img = e.currentTarget
+                        if (!image.width && !imageDimensions[image.id]) {
+                          setImageDimensions((prev) => ({
+                            ...prev,
+                            [image.id]: {
+                              width: img.naturalWidth,
+                              height: img.naturalHeight,
+                            },
+                          }))
+                        }
+                      }}
+                    />
+                    {image.alt_text && (
+                      <p className="text-white/90 text-sm font-normal tracking-wide mt-3 text-center drop-shadow-md">
+                        {image.alt_text}
+                      </p>
+                    )}
                   </CarouselItem>
                 ))}
               </CarouselContent>
