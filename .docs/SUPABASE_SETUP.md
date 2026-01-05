@@ -1,6 +1,14 @@
 # Supabase Setup Guide
 
-## 1. Create Supabase Project
+## 1. Supabase Project Setup
+
+### If you already have a Supabase project:
+
+You can use your existing Supabase project for this application. Simply select your project from the dashboard and proceed to **Step 2** to configure the environment variables.
+
+**Access your projects:** https://app.supabase.com
+
+### If you need to create a new project:
 
 1. Go to **https://supabase.com** and sign up/sign in
 2. Click **New Project** button
