@@ -31,7 +31,7 @@ npm install
 
 ### 2. Configure Supabase
 
-Follow the detailed setup guide in **[SUPABASE_SETUP.md](./SUPABASE_SETUP.md)** to:
+Follow the detailed setup guide in **[.docs/SUPABASE_SETUP.md](./.docs/SUPABASE_SETUP.md)** to:
 
 1. Create a Supabase project
 2. Set up database tables and storage
@@ -92,21 +92,33 @@ This site is configured to deploy automatically to GitHub Pages when pushing to 
 
 ```
 .
-├── app/                  # Next.js app directory
-│   ├── contact/         # Contact page
-│   ├── globals.css      # Global styles
-│   ├── layout.tsx       # Root layout
-│   └── page.tsx         # Home page
-├── components/          # React components
+├── .docs/               # Documentation
+│   └── SUPABASE_SETUP.md
+├── app/                 # Next.js app directory
+│   ├── admin/          # Admin interface
+│   ├── contact/        # Contact page
+│   ├── globals.css     # Global styles
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Home page
+├── components/         # React components
+│   ├── ui/            # shadcn/ui components
 │   ├── divider.tsx
 │   ├── footer.tsx
-│   ├── header.tsx
 │   ├── portfolio.tsx
 │   ├── theme-provider.tsx
 │   └── theme-toggle.tsx
-├── public/              # Static assets
-└── next.config.js       # Next.js configuration
+├── lib/               # Utility functions
+│   └── supabase/     # Supabase client & helpers
+├── public/           # Static assets
+│   └── gallery/     # Gallery images
+└── next.config.js   # Next.js configuration
 ```
+
+## Documentation
+
+Detailed documentation is available in the [`.docs`](./.docs) folder:
+
+- **[Supabase Setup Guide](./.docs/SUPABASE_SETUP.md)** - Complete guide for setting up Supabase database, storage, and authentication
 
 ## License
 
