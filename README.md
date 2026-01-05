@@ -9,6 +9,7 @@ Detailed documentation is available in the [`.docs`](./.docs) folder:
 - **[Technical Guide](./.docs/technical-guide.md)** - Tech stack, setup, build, deployment, and project structure
 - **[Supabase Setup Guide](./.docs/supabase-setup.md)** - Complete guide for setting up Supabase database, storage, and authentication
 - **[Admin System Guide](./.docs/admin-guide.md)** - Documentation for admin sign-up, approval, and management
+- **[Design system](https://ui.shadcn.com/docs/components)** - use npx commands to add a new components from shadcn.
 
 ## Features
 
