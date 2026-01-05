@@ -91,8 +91,8 @@ On the API settings page, you'll find:
 
 **API Keys**
 - Look for the section labeled "Project API keys"
-- Find the **anon public** key (it will be a long string starting with `eyJ...`)
-- Copy this key
+- Find the **anon / Publishable key** (it will be a long string starting with `eyJ...`)
+- Click the copy icon to copy this key
 - This is your `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
 ### Step 4: Update .env.local
@@ -107,8 +107,8 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 **Important:**
 - Never commit `.env.local` to git (it's already in `.gitignore`)
-- The `anon` key is safe to use in client-side code
-- Do **NOT** use the `service_role` key in your `.env.local` file
+- The Publishable key (anon key) is safe to use in client-side code
+- Do **NOT** use the `service_role` / Secret key in your `.env.local` file
 
 ## 5. Create Admin User
 
