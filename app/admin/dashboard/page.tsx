@@ -4,7 +4,7 @@ import * as React from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import { supabase } from '@/lib/supabase/client'
-import { getGalleryImages, addGalleryImage, deleteGalleryImage, reorderImages } from '@/lib/supabase/gallery'
+import { getGalleryImages, addGalleryImage, deleteGalleryImage, reorderImages, updateImageAltText } from '@/lib/supabase/gallery'
 import { uploadImage, deleteImage, getThumbnailUrl } from '@/lib/supabase/storage'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -15,6 +15,8 @@ export default function AdminDashboard() {
   const [images, setImages] = React.useState<GalleryImage[]>([])
   const [loading, setLoading] = React.useState(true)
   const [uploading, setUploading] = React.useState(false)
+  const [editingId, setEditingId] = React.useState<string | null>(null)
+  const [editingText, setEditingText] = React.useState('')
   const router = useRouter()
 
   React.useEffect(() => {
@@ -73,14 +75,13 @@ export default function AdminDashboard() {
   }
 
   async function handleDelete(image: GalleryImage) {
-    if (!confirm('Are you sure you want to delete this image?')) return
+    if (!confirm('Are you sure you want to delete this image? (It will be soft-deleted and can be restored later)')) return
 
     try {
-      // Delete from database
+      // Soft delete from database
       await deleteGalleryImage(image.id)
 
-      // Delete from storage
-      await deleteImage(image.storage_path)
+      // Note: We don't delete from storage to allow restoration
 
       // Reload images
       await loadImages()
@@ -111,6 +112,26 @@ export default function AdminDashboard() {
 
     setImages(newImages)
     await reorderImages(newImages.map(img => img.id))
+  }
+
+  function startEditing(image: GalleryImage) {
+    setEditingId(image.id)
+    setEditingText(image.alt_text)
+  }
+
+  async function saveAltText(id: string) {
+    try {
+      await updateImageAltText(id, editingText)
+      setEditingId(null)
+      await loadImages()
+    } catch (error: any) {
+      alert('Failed to update title: ' + error.message)
+    }
+  }
+
+  function cancelEditing() {
+    setEditingId(null)
+    setEditingText('')
   }
 
   if (!user) {
@@ -179,10 +200,55 @@ export default function AdminDashboard() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="p-4 space-y-2">
+                  <div className="p-4 space-y-3">
                     <div className="text-sm text-gray-600 dark:text-gray-400">
                       Order: {image.display_order}
                     </div>
+
+                    {/* Image Title/Name Editor */}
+                    <div>
+                      <label className="block text-xs font-medium mb-1">Image Name/Title</label>
+                      {editingId === image.id ? (
+                        <div className="space-y-2">
+                          <Input
+                            value={editingText}
+                            onChange={(e) => setEditingText(e.target.value)}
+                            placeholder="Enter image name"
+                            className="text-sm"
+                          />
+                          <div className="flex gap-2">
+                            <Button
+                              size="sm"
+                              onClick={() => saveAltText(image.id)}
+                              className="flex-1"
+                            >
+                              Save
+                            </Button>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={cancelEditing}
+                              className="flex-1"
+                            >
+                              Cancel
+                            </Button>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="flex items-center gap-2">
+                          <p className="text-sm flex-1 truncate">{image.alt_text || 'No name'}</p>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={() => startEditing(image)}
+                            className="text-xs"
+                          >
+                            Edit
+                          </Button>
+                        </div>
+                      )}
+                    </div>
+
                     <div className="flex gap-2">
                       <Button
                         variant="outline"

@@ -1,16 +1,35 @@
 import { supabase, type GalleryImage } from './client'
 
 /**
- * Fetch all gallery images ordered by display_order
+ * Fetch all active (non-deleted) gallery images ordered by display_order
  */
 export async function getGalleryImages(): Promise<GalleryImage[]> {
   const { data, error } = await supabase
     .from('gallery_images')
     .select('*')
+    .is('deleted_at', null)
     .order('display_order', { ascending: true })
 
   if (error) {
     console.error('Error fetching gallery images:', error)
+    return []
+  }
+
+  return data || []
+}
+
+/**
+ * Fetch deleted gallery images
+ */
+export async function getDeletedImages(): Promise<GalleryImage[]> {
+  const { data, error } = await supabase
+    .from('gallery_images')
+    .select('*')
+    .not('deleted_at', 'is', null)
+    .order('deleted_at', { ascending: false })
+
+  if (error) {
+    console.error('Error fetching deleted images:', error)
     return []
   }
 
@@ -53,9 +72,33 @@ export async function addGalleryImage(
 }
 
 /**
- * Delete an image from the gallery
+ * Soft delete an image from the gallery
  */
 export async function deleteGalleryImage(id: string) {
+  const { error } = await supabase
+    .from('gallery_images')
+    .update({ deleted_at: new Date().toISOString() })
+    .eq('id', id)
+
+  if (error) throw error
+}
+
+/**
+ * Restore a soft-deleted image
+ */
+export async function restoreGalleryImage(id: string) {
+  const { error } = await supabase
+    .from('gallery_images')
+    .update({ deleted_at: null })
+    .eq('id', id)
+
+  if (error) throw error
+}
+
+/**
+ * Permanently delete an image from the database
+ */
+export async function permanentlyDeleteGalleryImage(id: string) {
   const { error } = await supabase
     .from('gallery_images')
     .delete()
@@ -71,6 +114,18 @@ export async function updateImageOrder(id: string, newOrder: number) {
   const { error } = await supabase
     .from('gallery_images')
     .update({ display_order: newOrder })
+    .eq('id', id)
+
+  if (error) throw error
+}
+
+/**
+ * Update image alt text/title
+ */
+export async function updateImageAltText(id: string, altText: string) {
+  const { error } = await supabase
+    .from('gallery_images')
+    .update({ alt_text: altText })
     .eq('id', id)
 
   if (error) throw error

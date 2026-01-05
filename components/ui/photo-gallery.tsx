@@ -156,6 +156,15 @@ export function PhotoGallery() {
               {currentIndex + 1} / {images.length}
             </div>
 
+            {/* Image title */}
+            {images[currentIndex]?.alt_text && (
+              <div className="absolute top-16 left-0 right-0 z-50 text-center">
+                <p className="text-white text-lg md:text-xl font-light tracking-wide px-4">
+                  {images[currentIndex].alt_text}
+                </p>
+              </div>
+            )}
+
             {/* Carousel */}
             <Carousel
               setApi={setApi}

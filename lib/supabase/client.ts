@@ -13,4 +13,5 @@ export type GalleryImage = {
   display_order: number
   width?: number
   height?: number
+  deleted_at?: string | null
 }
