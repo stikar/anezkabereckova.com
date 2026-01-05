@@ -13,79 +13,57 @@
 
 **Direct link to create project:** https://app.supabase.com/new
 
-## 2. Create Database Table
+## 2. Run Database Migrations
+
+Database migrations are located in the `supabase/migrations/` folder.
+
+### Option A: Using Supabase Dashboard (Easiest)
 
 1. In your Supabase dashboard, click **SQL Editor** in the left sidebar
    - Direct link: `https://app.supabase.com/project/YOUR_PROJECT_ID/sql/new`
-2. Click **New query** button
-3. Copy and paste the SQL below
-4. Click **Run** (or press Cmd/Ctrl + Enter)
 
-**SQL to run:**
+2. Run **Migration 1** - Create gallery_images table:
+   - Open `supabase/migrations/20260105000001_create_gallery_images_table.sql`
+   - Copy the entire contents
+   - Paste into SQL Editor
+   - Click **Run** (or press Cmd/Ctrl + Enter)
 
-```sql
--- Create gallery_images table
-create table public.gallery_images (
-  id uuid default gen_random_uuid() primary key,
-  created_at timestamp with time zone default timezone('utc'::text, now()) not null,
-  storage_path text not null,
-  alt_text text default 'Portfolio image'::text,
-  display_order integer not null,
-  width integer,
-  height integer
-);
+3. Run **Migration 2** - Create storage bucket and policies:
+   - Open `supabase/migrations/20260105000002_create_storage_bucket_policies.sql`
+   - Copy the entire contents
+   - Paste into SQL Editor
+   - Click **Run**
 
--- Enable Row Level Security
-alter table public.gallery_images enable row level security;
+### Option B: Using Supabase CLI (Advanced)
 
--- Create policy to allow public read access
-create policy "Allow public read access"
-  on public.gallery_images
-  for select
-  using (true);
+If you have the [Supabase CLI](https://supabase.com/docs/guides/cli) installed:
 
--- Create policy to allow authenticated users to insert/update/delete
-create policy "Allow authenticated users full access"
-  on public.gallery_images
-  for all
-  using (auth.role() = 'authenticated');
+```bash
+# Link to your project
+supabase link --project-ref YOUR_PROJECT_ID
 
--- Create index for ordering
-create index gallery_images_display_order_idx on public.gallery_images(display_order);
+# Push all migrations
+supabase db push
 ```
 
-## 3. Create Storage Bucket
+**Verify migrations ran successfully:**
+- Go to **Table Editor** and you should see the `gallery_images` table
+- Go to **Storage** and you should see the `gallery-images` bucket
 
-1. In your Supabase dashboard, click **Storage** in the left sidebar
+## 3. Verify Storage Bucket
+
+The storage bucket should have been created automatically by Migration 2.
+
+**Verify:**
+1. Go to **Storage** in your Supabase dashboard
    - Direct link: `https://app.supabase.com/project/YOUR_PROJECT_ID/storage/buckets`
-2. Click **New bucket** button
-3. Fill in:
-   - **Name**: `gallery-images` (must be exactly this name)
-   - **Public bucket**: Toggle this **ON** (images need to be publicly accessible)
-4. Click **Create bucket**
-5. Click on the newly created `gallery-images` bucket
-6. Click the **Settings** tab (if available) to enable **Image Transformation**
+2. You should see the `gallery-images` bucket listed
+3. Click on it to verify it's configured as **Public**
 
-### Set Bucket Policies
-
-Run this SQL to set up storage policies:
-
-```sql
--- Allow public read access to gallery-images bucket
-create policy "Public Access"
-  on storage.objects for select
-  using (bucket_id = 'gallery-images');
-
--- Allow authenticated users to upload
-create policy "Authenticated users can upload"
-  on storage.objects for insert
-  with check (bucket_id = 'gallery-images' and auth.role() = 'authenticated');
-
--- Allow authenticated users to delete
-create policy "Authenticated users can delete"
-  on storage.objects for delete
-  using (bucket_id = 'gallery-images' and auth.role() = 'authenticated');
-```
+**Enable Image Transformation (Optional but recommended):**
+1. Click on the `gallery-images` bucket
+2. If there's a **Settings** or **Configuration** option, enable **Image Transformation**
+3. This allows Supabase to automatically optimize and resize images
 
 ## 4. Configure Environment Variables
 
