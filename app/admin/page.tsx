@@ -6,6 +6,8 @@ import { supabase } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 
+import Link from 'next/link'
+
 export default function AdminLogin() {
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
@@ -14,12 +16,28 @@ export default function AdminLogin() {
   const router = useRouter()
 
   React.useEffect(() => {
-    // Check if already logged in
-    supabase.auth.getSession().then(({ data: { session } }) => {
+    // Check if already logged in and approved
+    const checkSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession()
       if (session) {
-        router.push('/admin/dashboard')
+        // Check approval status
+        const { data: profile } = await supabase
+          .from('admins')
+          .select('is_approved')
+          .eq('id', session.user.id)
+          .single()
+
+        if (profile?.is_approved) {
+          router.push('/admin/dashboard')
+        } else if (profile && !profile.is_approved) {
+          // If logged in but not approved, we should probably sign them out here
+          // to prevent them from being stuck in a "logged in but unauthorized" state
+          await supabase.auth.signOut()
+          setError('Your account is pending approval.')
+        }
       }
-    })
+    }
+    checkSession()
   }, [router])
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -28,14 +46,37 @@ export default function AdminLogin() {
     setError('')
 
     try {
-      const { error } = await supabase.auth.signInWithPassword({
+      const { error: signInError, data } = await supabase.auth.signInWithPassword({
         email,
         password,
       })
 
-      if (error) throw error
+      if (signInError) throw signInError
 
-      router.push('/admin/dashboard')
+      if (data.user) {
+        // Check approval status
+        const { data: profile, error: profileError } = await supabase
+          .from('admins')
+          .select('is_approved')
+          .eq('id', data.user.id)
+          .single()
+
+        if (profileError) {
+          // If profile doesn't exist, it might be an old user. 
+          // We could auto-create one or just fail. 
+          // For now, let's assume if no profile, they are not approved or something is wrong.
+          // However, to be safe for existing users (like the main admin), maybe we treat no-profile as approved OR create one?
+          // The migration logic implies new users get a profile.
+          throw new Error('Could not verify account status.')
+        }
+
+        if (!profile.is_approved) {
+          await supabase.auth.signOut()
+          throw new Error('Your account is awaiting approval from an administrator.')
+        }
+
+        router.push('/admin/dashboard')
+      }
     } catch (error: any) {
       setError(error.message || 'Failed to login')
     } finally {
@@ -94,10 +135,13 @@ export default function AdminLogin() {
             {loading ? 'Logging in...' : 'Login'}
           </Button>
 
-          <div className="text-center text-sm text-gray-600 dark:text-gray-400 pt-4">
-            <a href="/" className="hover:underline">
+          <div className="flex justify-between text-sm pt-4">
+            <a href="/" className="text-gray-600 dark:text-gray-400 hover:underline">
               ← Back to site
             </a>
+            <Link href="/admin/signup" className="text-primary hover:underline">
+              Create an account
+            </Link>
           </div>
         </form>
       </div>
