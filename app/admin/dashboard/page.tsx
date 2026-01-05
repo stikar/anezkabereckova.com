@@ -115,7 +115,7 @@ export default function AdminDashboard() {
       const storagePath = await uploadImage(file)
 
       // Add to database
-      await addGalleryImage(storagePath, `Portfolio image`)
+      await addGalleryImage(storagePath)
 
       // Reload images
       await loadImages()

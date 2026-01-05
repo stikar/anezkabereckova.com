@@ -32,7 +32,8 @@ export async function isAdminApproved(id: string) {
         .from('admins')
         .select('is_approved')
         .eq('id', id)
-        .single()
+        .eq('id', id)
+        .maybeSingle()
 
     if (error) throw error
     return data?.is_approved ?? false

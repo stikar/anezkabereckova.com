@@ -41,7 +41,7 @@ export async function getDeletedImages(): Promise<GalleryImage[]> {
  */
 export async function addGalleryImage(
   storagePath: string,
-  altText: string = 'Portfolio image',
+  altText: string = '',
   width?: number,
   height?: number
 ) {
