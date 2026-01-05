@@ -136,9 +136,9 @@ export default function AdminLogin() {
           </Button>
 
           <div className="flex justify-between text-sm pt-4">
-            <a href="/" className="text-gray-600 dark:text-gray-400 hover:underline">
+            <Link href="/" className="text-gray-600 dark:text-gray-400 hover:underline">
               ← Back to site
-            </a>
+            </Link>
             <Link href="/admin/signup" className="text-primary hover:underline">
               Create an account
             </Link>
