@@ -36,7 +36,9 @@ export function PhotoGallery() {
   const [open, setOpen] = React.useState(false)
   const [currentIndex, setCurrentIndex] = React.useState(0)
   const [api, setApi] = React.useState<CarouselApi>()
-  const [imageDimensions, setImageDimensions] = React.useState<Record<string, { width: number; height: number }>>({})
+  const [imageDimensions, setImageDimensions] = React.useState<
+    Record<string, { width: number; height: number }>
+  >({})
 
   // Lock body scroll when lightbox is open
   React.useEffect(() => {
@@ -93,7 +95,10 @@ export function PhotoGallery() {
     return (
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4">
         {[...Array(6)].map((_, i) => (
-          <div key={i} className="aspect-[3/4] bg-gray-200 dark:bg-gray-800 animate-pulse" />
+          <div
+            key={i}
+            className="aspect-[3/4] bg-gray-200 dark:bg-gray-800 animate-pulse"
+          />
         ))}
       </div>
     )
@@ -102,7 +107,11 @@ export function PhotoGallery() {
   if (images.length === 0) {
     return (
       <div className="text-center py-12 text-gray-500">
-        No images in gallery yet. Visit <a href="/admin" className="underline hover:text-gray-700">/admin</a> to add images.
+        No images in gallery yet. Visit{' '}
+        <a href="/admin" className="underline hover:text-gray-700">
+          /admin
+        </a>{' '}
+        to add images.
       </div>
     )
   }
@@ -159,8 +168,6 @@ export function PhotoGallery() {
               {currentIndex + 1} / {images.length}
             </div>
 
-
-
             {/* Carousel */}
             <Carousel
               setApi={setApi}
@@ -173,12 +180,19 @@ export function PhotoGallery() {
             >
               <CarouselContent className="h-full">
                 {images.map((image, index) => (
-                  <CarouselItem key={image.id} className="h-full flex flex-col items-center justify-center p-4 focus:outline-none">
+                  <CarouselItem
+                    key={image.id}
+                    className="h-full flex flex-col items-center justify-center p-4 focus:outline-none"
+                  >
                     <Image
                       src={getFullImageUrl(image.storage_path)}
                       alt={image.alt_text}
-                      width={image.width || imageDimensions[image.id]?.width || 1200}
-                      height={image.height || imageDimensions[image.id]?.height || 800}
+                      width={
+                        image.width || imageDimensions[image.id]?.width || 1200
+                      }
+                      height={
+                        image.height || imageDimensions[image.id]?.height || 800
+                      }
                       className="max-w-full max-h-[85vh] w-auto h-auto object-contain cursor-grab active:cursor-grabbing"
                       priority={index === currentIndex}
                       onLoad={(e) => {

@@ -30,7 +30,10 @@ export default function Contact() {
       </header>
 
       <main className="flex-1 w-full flex items-center justify-center px-4 md:px-8 lg:px-12 py-12 md:py-16">
-        <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-center w-full" style={{ maxWidth: '42rem' }}>
+        <div
+          className="flex flex-col md:flex-row gap-12 md:gap-16 items-center w-full"
+          style={{ maxWidth: '42rem' }}
+        >
           {/* Profile Image */}
           <div className="w-64 h-80 md:w-72 md:h-96 relative flex-shrink-0">
             <Image
@@ -46,17 +49,26 @@ export default function Contact() {
           <div className="space-y-8 flex-1">
             {/* Name and Title */}
             <div className="space-y-1">
-              <h1 className="font-serif text-4xl md:text-5xl tracking-wide" style={{ color: '#0a0a0a' }}>
+              <h1
+                className="font-serif text-4xl md:text-5xl tracking-wide"
+                style={{ color: '#0a0a0a' }}
+              >
                 Anežka Berecková
               </h1>
-              <p className="font-sans text-xs tracking-[0.2em] uppercase" style={{ color: '#737373' }}>
+              <p
+                className="font-sans text-xs tracking-[0.2em] uppercase"
+                style={{ color: '#737373' }}
+              >
                 Fashion Designer
               </p>
             </div>
 
             {/* Email Section */}
             <div className="space-y-2">
-              <h2 className="font-sans text-xs tracking-[0.2em] uppercase" style={{ color: '#737373' }}>
+              <h2
+                className="font-sans text-xs tracking-[0.2em] uppercase"
+                style={{ color: '#737373' }}
+              >
                 Email
               </h2>
               <a
@@ -84,7 +96,10 @@ export default function Contact() {
 
             {/* LinkedIn Section */}
             <div className="space-y-2">
-              <h2 className="font-sans text-xs tracking-[0.2em] uppercase" style={{ color: '#737373' }}>
+              <h2
+                className="font-sans text-xs tracking-[0.2em] uppercase"
+                style={{ color: '#737373' }}
+              >
                 LinkedIn
               </h2>
               <a
@@ -116,8 +131,12 @@ export default function Contact() {
             {/* Divider */}
             <div className="border-t border-gray-200 pt-6">
               {/* Description */}
-              <p className="text-sm leading-relaxed" style={{ color: '#737373' }}>
-                For collaboration inquiries, press features, or collection viewings, please reach out via email.
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: '#737373' }}
+              >
+                For collaboration inquiries, press features, or collection
+                viewings, please reach out via email.
               </p>
             </div>
           </div>

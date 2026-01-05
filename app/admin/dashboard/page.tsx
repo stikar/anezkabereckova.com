@@ -4,17 +4,34 @@ import * as React from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import { supabase } from '@/lib/supabase/client'
-import { getGalleryImages, addGalleryImage, deleteGalleryImage, reorderImages, updateImageAltText } from '@/lib/supabase/gallery'
-import { uploadImage, deleteImage, getThumbnailUrl } from '@/lib/supabase/storage'
+import {
+  getGalleryImages,
+  addGalleryImage,
+  deleteGalleryImage,
+  reorderImages,
+  updateImageAltText,
+} from '@/lib/supabase/gallery'
+import {
+  uploadImage,
+  deleteImage,
+  getThumbnailUrl,
+} from '@/lib/supabase/storage'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import type { GalleryImage } from '@/lib/supabase/client'
 
-import { getPendingAdmins, approveAdmin, isAdminApproved, type AdminUser } from '@/lib/supabase/admin'
+import {
+  getPendingAdmins,
+  approveAdmin,
+  isAdminApproved,
+  type AdminUser,
+} from '@/lib/supabase/admin'
 
 export default function AdminDashboard() {
   const [user, setUser] = React.useState<any>(null)
-  const [activeTab, setActiveTab] = React.useState<'gallery' | 'users'>('gallery')
+  const [activeTab, setActiveTab] = React.useState<'gallery' | 'users'>(
+    'gallery'
+  )
 
   // Gallery state
   const [images, setImages] = React.useState<GalleryImage[]>([])
@@ -31,7 +48,9 @@ export default function AdminDashboard() {
 
   React.useEffect(() => {
     async function checkAuth() {
-      const { data: { session } } = await supabase.auth.getSession()
+      const {
+        data: { session },
+      } = await supabase.auth.getSession()
       if (!session) {
         router.push('/admin')
         return
@@ -62,8 +81,6 @@ export default function AdminDashboard() {
       }
     }
   }, [user, activeTab])
-
-
 
   async function loadImages() {
     setLoading(true)
@@ -130,7 +147,12 @@ export default function AdminDashboard() {
   }
 
   async function handleDelete(image: GalleryImage) {
-    if (!confirm('Are you sure you want to delete this image? (It will be soft-deleted and can be restored later)')) return
+    if (
+      !confirm(
+        'Are you sure you want to delete this image? (It will be soft-deleted and can be restored later)'
+      )
+    )
+      return
 
     try {
       // Soft delete from database
@@ -154,7 +176,7 @@ export default function AdminDashboard() {
     newImages[index - 1] = temp
 
     setImages(newImages)
-    await reorderImages(newImages.map(img => img.id))
+    await reorderImages(newImages.map((img) => img.id))
   }
 
   async function moveDown(index: number) {
@@ -166,7 +188,7 @@ export default function AdminDashboard() {
     newImages[index + 1] = temp
 
     setImages(newImages)
-    await reorderImages(newImages.map(img => img.id))
+    await reorderImages(newImages.map((img) => img.id))
   }
 
   function startEditing(image: GalleryImage) {
@@ -199,8 +221,12 @@ export default function AdminDashboard() {
       <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <div>
-            <h1 className="font-serif text-2xl tracking-wide">Admin Dashboard</h1>
-            <p className="text-sm text-gray-600 dark:text-gray-400">{user.email}</p>
+            <h1 className="font-serif text-2xl tracking-wide">
+              Admin Dashboard
+            </h1>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              {user.email}
+            </p>
           </div>
           <div className="flex gap-3">
             <Button variant="outline" onClick={() => router.push('/')}>
@@ -216,19 +242,21 @@ export default function AdminDashboard() {
         <div className="max-w-7xl mx-auto px-4 mt-4 flex gap-4 border-b border-gray-200 dark:border-gray-700">
           <button
             onClick={() => setActiveTab('gallery')}
-            className={`pb-2 px-1 text-sm font-medium transition-colors ${activeTab === 'gallery'
-              ? 'border-b-2 border-primary text-primary'
-              : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
-              }`}
+            className={`pb-2 px-1 text-sm font-medium transition-colors ${
+              activeTab === 'gallery'
+                ? 'border-b-2 border-primary text-primary'
+                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
+            }`}
           >
             Gallery Management
           </button>
           <button
             onClick={() => setActiveTab('users')}
-            className={`pb-2 px-1 text-sm font-medium transition-colors ${activeTab === 'users'
-              ? 'border-b-2 border-primary text-primary'
-              : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
-              }`}
+            className={`pb-2 px-1 text-sm font-medium transition-colors ${
+              activeTab === 'users'
+                ? 'border-b-2 border-primary text-primary'
+                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
+            }`}
           >
             User Approval
             {pendingUsers.length > 0 && (
@@ -255,19 +283,26 @@ export default function AdminDashboard() {
                   disabled={uploading}
                   className="max-w-md"
                 />
-                {uploading && <span className="text-sm text-gray-600">Uploading...</span>}
+                {uploading && (
+                  <span className="text-sm text-gray-600">Uploading...</span>
+                )}
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                Supported formats: JPG, PNG, WebP. Images will be automatically optimized.
+                Supported formats: JPG, PNG, WebP. Images will be automatically
+                optimized.
               </p>
             </div>
 
             {/* Gallery Grid */}
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
-              <h2 className="text-xl font-medium mb-4">Gallery Images ({images.length})</h2>
+              <h2 className="text-xl font-medium mb-4">
+                Gallery Images ({images.length})
+              </h2>
 
               {loading ? (
-                <div className="text-center py-12 text-gray-500">Loading...</div>
+                <div className="text-center py-12 text-gray-500">
+                  Loading...
+                </div>
               ) : images.length === 0 ? (
                 <div className="text-center py-12 text-gray-500">
                   No images yet. Upload your first image above.
@@ -275,7 +310,10 @@ export default function AdminDashboard() {
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {images.map((image, index) => (
-                    <div key={image.id} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+                    <div
+                      key={image.id}
+                      className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden"
+                    >
                       <div className="aspect-[3/4] relative bg-gray-100 dark:bg-gray-900">
                         <Image
                           src={getThumbnailUrl(image.storage_path)}
@@ -291,7 +329,9 @@ export default function AdminDashboard() {
 
                         {/* Image Title/Name Editor */}
                         <div>
-                          <label className="block text-xs font-medium mb-1">Image Name/Title</label>
+                          <label className="block text-xs font-medium mb-1">
+                            Image Name/Title
+                          </label>
                           {editingId === image.id ? (
                             <div className="space-y-2">
                               <Input
@@ -320,7 +360,9 @@ export default function AdminDashboard() {
                             </div>
                           ) : (
                             <div className="flex items-center gap-2">
-                              <p className="text-sm flex-1 truncate">{image.alt_text || 'No name'}</p>
+                              <p className="text-sm flex-1 truncate">
+                                {image.alt_text || 'No name'}
+                              </p>
                               <Button
                                 variant="ghost"
                                 size="sm"
@@ -379,10 +421,16 @@ export default function AdminDashboard() {
             ) : (
               <div className="space-y-4">
                 {pendingUsers.map((pUser) => (
-                  <div key={pUser.id} className="flex items-center justify-between p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                  <div
+                    key={pUser.id}
+                    className="flex items-center justify-between p-4 border border-gray-200 dark:border-gray-700 rounded-lg"
+                  >
                     <div>
                       <p className="font-medium">{pUser.email}</p>
-                      <p className="text-sm text-gray-500">Joined: {new Date(pUser.created_at).toLocaleDateString()}</p>
+                      <p className="text-sm text-gray-500">
+                        Joined:{' '}
+                        {new Date(pUser.created_at).toLocaleDateString()}
+                      </p>
                     </div>
                     <Button onClick={() => handleApproveUser(pUser.id)}>
                       Approve

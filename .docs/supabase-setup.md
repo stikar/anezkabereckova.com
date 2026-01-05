@@ -41,11 +41,13 @@ cp .env.local.example .env.local
 On the API settings page, you'll find:
 
 **Project URL**
+
 - Look for the section labeled "Project URL"
 - Copy the URL (format: `https://xxxxxxxxxxxxx.supabase.co`)
 - This is your `NEXT_PUBLIC_SUPABASE_URL`
 
 **API Keys**
+
 - Look for the section labeled "Project API keys"
 - Find the **anon / Publishable key** (it will be a long string starting with `eyJ...`)
 - Click the copy icon to copy this key
@@ -62,6 +64,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
 **Important:**
+
 - Never commit `.env.local` to git (it's already in `.gitignore`)
 - The Publishable key (anon key) is safe to use in client-side code
 - Do **NOT** use the `service_role` / Secret key in your `.env.local` file
@@ -100,6 +103,7 @@ supabase db push
 ```
 
 **Verify migrations ran successfully:**
+
 - Go to **Table Editor** and you should see the `gallery_images` table
 - Go to **Storage** and you should see the `gallery-images` bucket
 
@@ -108,12 +112,14 @@ supabase db push
 The storage bucket should have been created automatically by Migration 2.
 
 **Verify:**
+
 1. Go to **Storage** in your Supabase dashboard
    - Direct link: `https://app.supabase.com/project/YOUR_PROJECT_ID/storage/buckets`
 2. You should see the `gallery-images` bucket listed
 3. Click on it to verify it's configured as **Public**
 
 **Enable Image Transformation (Optional but recommended):**
+
 1. Click on the `gallery-images` bucket
 2. If there's a **Settings** or **Configuration** option, enable **Image Transformation**
 3. This allows Supabase to automatically optimize and resize images

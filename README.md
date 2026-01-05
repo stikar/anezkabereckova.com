@@ -19,4 +19,3 @@ Detailed documentation is available in the [`.docs`](./.docs) folder:
 - **Supabase-powered gallery management** with admin interface
 - Automatic image optimization and thumbnail generation
 - Contact page
-
