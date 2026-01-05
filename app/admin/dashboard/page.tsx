@@ -273,7 +273,7 @@ export default function AdminDashboard() {
         {activeTab === 'gallery' ? (
           <>
             {/* Upload Section */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 mb-8 shadow-sm">
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 mb-8 shadow-xs">
               <h2 className="text-xl font-medium mb-4">Upload New Image</h2>
               <div className="flex items-center gap-4">
                 <Input
@@ -294,7 +294,7 @@ export default function AdminDashboard() {
             </div>
 
             {/* Gallery Grid */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-xs">
               <h2 className="text-xl font-medium mb-4">
                 Gallery Images ({images.length})
               </h2>
@@ -314,7 +314,7 @@ export default function AdminDashboard() {
                       key={image.id}
                       className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden"
                     >
-                      <div className="aspect-[3/4] relative bg-gray-100 dark:bg-gray-900">
+                      <div className="aspect-3/4 relative bg-gray-100 dark:bg-gray-900">
                         <Image
                           src={getThumbnailUrl(image.storage_path)}
                           alt={image.alt_text}
@@ -409,7 +409,7 @@ export default function AdminDashboard() {
             </div>
           </>
         ) : (
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-xs">
             <h2 className="text-xl font-medium mb-4">Pending User Approvals</h2>
 
             {loadingUsers ? (

@@ -35,7 +35,7 @@ export default function Contact() {
           style={{ maxWidth: '42rem' }}
         >
           {/* Profile Image - Grayscale removed */}
-          <div className="w-64 h-80 md:w-72 md:h-96 relative flex-shrink-0">
+          <div className="w-64 h-80 md:w-72 md:h-96 relative shrink-0">
             <Image
               src="/contact-selfie.jpeg"
               alt="Anežka Berecková"

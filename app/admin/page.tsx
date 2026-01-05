@@ -103,7 +103,7 @@ export default function AdminLogin() {
 
         <form
           onSubmit={handleLogin}
-          className="space-y-4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm"
+          className="space-y-4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xs"
         >
           <div>
             <label htmlFor="email" className="block text-sm font-medium mb-2">
@@ -137,7 +137,7 @@ export default function AdminLogin() {
           </div>
 
           {error && (
-            <div className="text-sm text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20 p-3 rounded">
+            <div className="text-sm text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20 p-3 rounded-sm">
               {error}
             </div>
           )}
