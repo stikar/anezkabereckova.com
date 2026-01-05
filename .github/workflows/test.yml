@@ -45,4 +45,12 @@ jobs:
             echo "index.html not found in build output"
             exit 1
           fi
-          echo "Build output verified successfully"
+          if [ ! -d "out/contact" ]; then
+            echo "contact directory not found in build output"
+            exit 1
+          fi
+          if [ ! -f "out/contact/index.html" ]; then
+            echo "contact/index.html not found in build output"
+            exit 1
+          fi
+          echo "Build output verified successfully (index.html and contact page found)"
