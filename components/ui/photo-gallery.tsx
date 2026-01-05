@@ -136,7 +136,7 @@ export function PhotoGallery() {
             {/* Close button */}
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-4 right-4 z-50 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+              className="absolute top-4 right-4 z-50 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors focus-visible:outline-none focus-visible:ring-0"
               aria-label="Close lightbox"
             >
               <svg
@@ -165,7 +165,7 @@ export function PhotoGallery() {
             <Carousel
               setApi={setApi}
               plugins={[Fade()]}
-              className="w-full h-full focus:outline-none"
+              className="w-full h-full focus:outline-none focus-visible:outline-none focus-visible:ring-0"
               opts={{
                 loop: true,
                 startIndex: currentIndex,
@@ -179,7 +179,7 @@ export function PhotoGallery() {
                       alt={image.alt_text}
                       width={image.width || imageDimensions[image.id]?.width || 1200}
                       height={image.height || imageDimensions[image.id]?.height || 800}
-                      className="max-w-full max-h-[85vh] w-auto h-auto object-contain"
+                      className="max-w-full max-h-[85vh] w-auto h-auto object-contain cursor-grab active:cursor-grabbing"
                       priority={index === currentIndex}
                       onLoad={(e) => {
                         const img = e.currentTarget
@@ -202,8 +202,8 @@ export function PhotoGallery() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-4 bg-white/10 hover:bg-white/20 text-white border-0" />
-              <CarouselNext className="right-4 bg-white/10 hover:bg-white/20 text-white border-0" />
+              <CarouselPrevious className="left-4 bg-transparent hover:bg-white/10 text-white/50 hover:text-white border-0 transition-all focus-visible:outline-none focus-visible:ring-0" />
+              <CarouselNext className="right-4 bg-transparent hover:bg-white/10 text-white/50 hover:text-white border-0 transition-all focus-visible:outline-none focus-visible:ring-0" />
             </Carousel>
           </div>
         </DialogContent>
