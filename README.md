@@ -7,8 +7,9 @@ A minimalist portfolio website for fashion designer Anežka Berecková, built wi
 - Clean, elegant design optimized for showcasing fashion design work
 - Dark/Light theme toggle with system preference support
 - Fully responsive layout for all device sizes
-- Static site generation for GitHub Pages deployment
-- Portfolio gallery section
+- Photo gallery with lightbox (swipe gestures, keyboard navigation)
+- **Supabase-powered gallery management** with admin interface
+- Automatic image optimization and thumbnail generation
 - Contact page
 
 ## Tech Stack
@@ -16,23 +17,56 @@ A minimalist portfolio website for fashion designer Anežka Berecková, built wi
 - Next.js 14 (App Router)
 - TypeScript
 - Tailwind CSS
+- Supabase (Database + Storage)
+- shadcn/ui components
 - next-themes for theme switching
 
-## Development
+## Setup
 
-Install dependencies:
+### 1. Install Dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server:
+### 2. Configure Supabase
+
+Follow the detailed setup guide in **[SUPABASE_SETUP.md](./SUPABASE_SETUP.md)** to:
+
+1. Create a Supabase project
+2. Set up database tables and storage
+3. Configure authentication
+4. Get your API credentials
+
+### 3. Environment Variables
+
+Copy `.env.local.example` to `.env.local` and add your Supabase credentials:
+
+```bash
+cp .env.local.example .env.local
+```
+
+Then edit `.env.local` with your values from Supabase dashboard.
+
+### 4. Run Development Server
 
 ```bash
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+## Admin Panel
+
+Access the admin interface at `/admin` to manage gallery images:
+
+- **Upload images** - Drag and drop or select files
+- **Reorder images** - Move images up/down to change gallery order
+- **Delete images** - Remove images from gallery
+- **Auto-optimization** - Images are automatically converted to WebP and thumbnails are generated
+
+**Default admin access:**
+Create an admin user in Supabase Authentication dashboard, then use those credentials to log in.
 
 ## Building for Production
 

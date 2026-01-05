@@ -11,10 +11,27 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui/carousel'
-import { getGalleryImages } from '@/lib/get-gallery-images'
+import { getGalleryImages } from '@/lib/supabase/gallery'
+import { getThumbnailUrl, getFullImageUrl } from '@/lib/supabase/storage'
+import type { GalleryImage } from '@/lib/supabase/client'
 
 export function PhotoGallery() {
-  const images = getGalleryImages()
+  const [images, setImages] = React.useState<GalleryImage[]>([])
+  const [loading, setLoading] = React.useState(true)
+
+  React.useEffect(() => {
+    async function loadImages() {
+      try {
+        const data = await getGalleryImages()
+        setImages(data)
+      } catch (error) {
+        console.error('Failed to load gallery images:', error)
+      } finally {
+        setLoading(false)
+      }
+    }
+    loadImages()
+  }, [])
   const [open, setOpen] = React.useState(false)
   const [currentIndex, setCurrentIndex] = React.useState(0)
   const [api, setApi] = React.useState<CarouselApi>()
@@ -70,19 +87,37 @@ export function PhotoGallery() {
     setOpen(true)
   }
 
+  if (loading) {
+    return (
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4">
+        {[...Array(6)].map((_, i) => (
+          <div key={i} className="aspect-[3/4] bg-gray-200 dark:bg-gray-800 animate-pulse" />
+        ))}
+      </div>
+    )
+  }
+
+  if (images.length === 0) {
+    return (
+      <div className="text-center py-12 text-gray-500">
+        No images in gallery yet. Visit <a href="/admin" className="underline hover:text-gray-700">/admin</a> to add images.
+      </div>
+    )
+  }
+
   return (
     <>
       {/* Gallery Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4">
         {images.map((image, index) => (
           <button
-            key={index}
+            key={image.id}
             onClick={() => openLightbox(index)}
             className="aspect-[3/4] bg-gray-200 dark:bg-gray-800 overflow-hidden hover:opacity-80 transition-opacity cursor-pointer relative group"
           >
             <Image
-              src={image.src}
-              alt={image.alt}
+              src={getThumbnailUrl(image.storage_path)}
+              alt={image.alt_text}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
@@ -132,11 +167,11 @@ export function PhotoGallery() {
             >
               <CarouselContent className="h-full">
                 {images.map((image, index) => (
-                  <CarouselItem key={index} className="h-full flex items-center justify-center">
+                  <CarouselItem key={image.id} className="h-full flex items-center justify-center">
                     <div className="relative w-full h-full max-w-7xl max-h-[90vh] mx-auto">
                       <Image
-                        src={image.src}
-                        alt={image.alt}
+                        src={getFullImageUrl(image.storage_path)}
+                        alt={image.alt_text}
                         fill
                         className="object-contain"
                         sizes="100vw"
