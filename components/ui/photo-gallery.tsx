@@ -97,7 +97,7 @@ export function PhotoGallery() {
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
-            className="aspect-[3/4] bg-gray-200 dark:bg-gray-800 animate-pulse"
+            className="aspect-3/4 bg-gray-200 dark:bg-gray-800 animate-pulse"
           />
         ))}
       </div>
@@ -124,7 +124,7 @@ export function PhotoGallery() {
           <button
             key={image.id}
             onClick={() => openLightbox(index)}
-            className="aspect-[3/4] bg-gray-200 dark:bg-gray-800 overflow-hidden hover:opacity-80 transition-opacity cursor-pointer relative group focus:outline-none"
+            className="aspect-3/4 bg-gray-200 dark:bg-gray-800 overflow-hidden hover:opacity-80 transition-opacity cursor-pointer relative group focus:outline-hidden"
           >
             <Image
               src={getThumbnailUrl(image.storage_path)}
@@ -139,13 +139,13 @@ export function PhotoGallery() {
 
       {/* Lightbox Dialog */}
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-[100vw] max-h-[100vh] w-full h-full p-0 border-0 bg-black/95">
+        <DialogContent className="max-w-[100vw] max-h-screen w-full h-full p-0 border-0 bg-black/95">
           <div className="relative w-full h-full flex items-center justify-center">
             <DialogTitle className="sr-only">Photo Gallery</DialogTitle>
             {/* Close button */}
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-4 right-4 z-50 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors focus-visible:outline-none focus-visible:ring-0"
+              className="absolute top-4 right-4 z-50 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors focus-visible:outline-hidden focus-visible:ring-0"
               aria-label="Close lightbox"
             >
               <svg
@@ -172,7 +172,7 @@ export function PhotoGallery() {
             <Carousel
               setApi={setApi}
               plugins={[Fade()]}
-              className="w-full h-full focus:outline-none focus-visible:outline-none focus-visible:ring-0"
+              className="w-full h-full focus:outline-hidden focus-visible:outline-hidden focus-visible:ring-0"
               opts={{
                 loop: true,
                 startIndex: currentIndex,
@@ -182,7 +182,7 @@ export function PhotoGallery() {
                 {images.map((image, index) => (
                   <CarouselItem
                     key={image.id}
-                    className="h-full flex flex-col items-center justify-center p-4 focus:outline-none"
+                    className="h-full flex flex-col items-center justify-center p-4 focus:outline-hidden"
                   >
                     <Image
                       src={getFullImageUrl(image.storage_path)}
@@ -216,8 +216,8 @@ export function PhotoGallery() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-4 bg-transparent hover:bg-white/10 text-white/50 hover:text-white border-0 transition-all focus-visible:outline-none focus-visible:ring-0" />
-              <CarouselNext className="right-4 bg-transparent hover:bg-white/10 text-white/50 hover:text-white border-0 transition-all focus-visible:outline-none focus-visible:ring-0" />
+              <CarouselPrevious className="left-4 bg-transparent hover:bg-white/10 text-white/50 hover:text-white border-0 transition-all focus-visible:outline-hidden focus-visible:ring-0" />
+              <CarouselNext className="right-4 bg-transparent hover:bg-white/10 text-white/50 hover:text-white border-0 transition-all focus-visible:outline-hidden focus-visible:ring-0" />
             </Carousel>
           </div>
         </DialogContent>

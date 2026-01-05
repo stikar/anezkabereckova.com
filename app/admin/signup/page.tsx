@@ -63,7 +63,7 @@ export default function AdminSignup() {
           </p>
         </div>
 
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xs">
           {success ? (
             <div className="text-center space-y-4">
               <div className="flex justify-center text-green-500">
@@ -117,7 +117,7 @@ export default function AdminSignup() {
               </div>
 
               {error && (
-                <div className="flex items-center gap-2 text-sm text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20 p-3 rounded">
+                <div className="flex items-center gap-2 text-sm text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20 p-3 rounded-sm">
                   <AlertCircle size={16} />
                   {error}
                 </div>
