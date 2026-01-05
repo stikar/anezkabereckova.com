@@ -2,12 +2,26 @@
 
 ## 1. Create Supabase Project
 
-1. Go to [Supabase](https://supabase.com) and create a new project
-2. Wait for the project to be fully initialized
+1. Go to **https://supabase.com** and sign up/sign in
+2. Click **New Project** button
+3. Fill in:
+   - **Name**: Your project name (e.g., "anezkabereckova-gallery")
+   - **Database Password**: Choose a strong password (save it somewhere safe)
+   - **Region**: Choose the closest region to your users
+4. Click **Create new project**
+5. Wait 1-2 minutes for the project to be fully initialized
+
+**Direct link to create project:** https://app.supabase.com/new
 
 ## 2. Create Database Table
 
-Go to the SQL Editor in your Supabase dashboard and run this SQL:
+1. In your Supabase dashboard, click **SQL Editor** in the left sidebar
+   - Direct link: `https://app.supabase.com/project/YOUR_PROJECT_ID/sql/new`
+2. Click **New query** button
+3. Copy and paste the SQL below
+4. Click **Run** (or press Cmd/Ctrl + Enter)
+
+**SQL to run:**
 
 ```sql
 -- Create gallery_images table
@@ -42,10 +56,15 @@ create index gallery_images_display_order_idx on public.gallery_images(display_o
 
 ## 3. Create Storage Bucket
 
-1. Go to **Storage** in Supabase dashboard
-2. Create a new bucket named: `gallery-images`
-3. Make it **public** (so images are accessible without authentication)
-4. Enable **Image Transformation** in the bucket settings
+1. In your Supabase dashboard, click **Storage** in the left sidebar
+   - Direct link: `https://app.supabase.com/project/YOUR_PROJECT_ID/storage/buckets`
+2. Click **New bucket** button
+3. Fill in:
+   - **Name**: `gallery-images` (must be exactly this name)
+   - **Public bucket**: Toggle this **ON** (images need to be publicly accessible)
+4. Click **Create bucket**
+5. Click on the newly created `gallery-images` bucket
+6. Click the **Settings** tab (if available) to enable **Image Transformation**
 
 ### Set Bucket Policies
 
@@ -70,29 +89,73 @@ create policy "Authenticated users can delete"
 
 ## 4. Configure Environment Variables
 
-1. Copy `.env.local.example` to `.env.local`
-2. Get your project URL and anon key from: **Settings > API**
-3. Update the values in `.env.local`:
+### Step 1: Copy the environment template
 
 ```bash
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
+cp .env.local.example .env.local
 ```
+
+### Step 2: Get your Supabase credentials
+
+1. Go to your Supabase project dashboard: **https://app.supabase.com**
+2. Select your project
+3. In the left sidebar, click **Project Settings** (gear icon at the bottom)
+4. Click **API** in the settings menu
+
+### Step 3: Copy the values
+
+On the API settings page, you'll find:
+
+**Project URL**
+- Look for the section labeled "Project URL"
+- Copy the URL (format: `https://xxxxxxxxxxxxx.supabase.co`)
+- This is your `NEXT_PUBLIC_SUPABASE_URL`
+
+**API Keys**
+- Look for the section labeled "Project API keys"
+- Find the **anon public** key (it will be a long string starting with `eyJ...`)
+- Copy this key
+- This is your `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+### Step 4: Update .env.local
+
+Open `.env.local` and replace the placeholder values:
+
+```bash
+# Replace these with your actual values from https://app.supabase.com/project/_/settings/api
+NEXT_PUBLIC_SUPABASE_URL=https://xxxxxxxxxxxxx.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Important:**
+- Never commit `.env.local` to git (it's already in `.gitignore`)
+- The `anon` key is safe to use in client-side code
+- Do **NOT** use the `service_role` key in your `.env.local` file
 
 ## 5. Create Admin User
 
-1. Go to **Authentication > Users** in Supabase dashboard
-2. Click **Add User**
-3. Create a user with email and password
-4. Use these credentials to log in to `/admin`
+1. In your Supabase dashboard, click **Authentication** in the left sidebar
+   - Direct link: `https://app.supabase.com/project/YOUR_PROJECT_ID/auth/users`
+2. Click **Add user** button (green button in top right)
+3. Select **Create new user**
+4. Fill in:
+   - **Email**: Your admin email (e.g., `admin@anezkabereckova.com`)
+   - **Password**: Choose a strong password
+   - **Auto Confirm User**: Toggle this **ON** (so you don't need to verify email)
+5. Click **Create user**
+6. Save these credentials - you'll use them to log in to `/admin`
 
-## 6. Enable Email Authentication (Optional)
+## 6. Enable Email Authentication
 
-If you want email/password authentication:
+Email authentication should be enabled by default, but verify:
 
-1. Go to **Authentication > Providers**
-2. Enable **Email** provider
-3. Configure email templates if needed
+1. In your Supabase dashboard, go to **Authentication > Providers**
+   - Direct link: `https://app.supabase.com/project/YOUR_PROJECT_ID/auth/providers`
+2. Find **Email** in the list of providers
+3. Make sure it's **Enabled** (toggle should be green)
+4. Click **Email** to configure settings if needed:
+   - **Confirm email**: Can be disabled for development
+   - **Secure email change**: Recommended to keep enabled
 
 ## 7. Test the Setup
 
