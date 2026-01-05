@@ -31,7 +31,7 @@ export default function Contact() {
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl tracking-wide mb-3 md:mb-4">
             ANEŽKA BERECKOVÁ
           </h1>
-          <p className="text-xs md:text-sm tracking-widest uppercase">
+          <p className="font-sans font-light text-xs md:text-sm tracking-widest uppercase">
             Fashion Designer
           </p>
         </div>

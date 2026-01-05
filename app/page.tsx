@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl tracking-wide mb-3 md:mb-4">
             ANEŽKA BERECKOVÁ
           </h1>
-          <p className="text-xs md:text-sm tracking-widest uppercase mb-4 md:mb-6">
+          <p className="font-sans font-light text-xs md:text-sm tracking-widest uppercase mb-4 md:mb-6">
             Fashion Designer
           </p>
           <Link
