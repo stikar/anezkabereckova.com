@@ -88,7 +88,7 @@ export default function Contact() {
                 LinkedIn
               </h2>
               <a
-                href="https://www.linkedin.com/in/anezka-bereckova"
+                href="https://www.linkedin.com/in/anežka-berecková-b8370828a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity"
