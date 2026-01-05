@@ -3,8 +3,21 @@ import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Anežka Berecková - Fashion Designer',
-  description: 'Portfolio of fashion designer Anežka Berecková',
+    metadataBase: new URL('https://anezkabereckova.com'),
+    title: 'Anežka Berecková - Fashion Designer',
+    description: 'Portfolio of fashion designer Anežka Berecková',
+    openGraph: {
+        title: 'Anežka Berecková - Fashion Designer',
+        description: 'Portfolio of fashion designer Anežka Berecková',
+        images: [
+            {
+                url: '/contact-selfie.jpeg',
+                width: 400,
+                height: 400,
+                alt: 'Anežka Berecková – Fashion Designer',
+            },
+        ],
+    },
 }
 
 export default function RootLayout({
