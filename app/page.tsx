@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex-1 w-full max-w-[1800px] mx-auto px-4 md:px-8 lg:px-12 py-8 md:py-12">
+      <main className="flex-1 w-full max-w-[1130px] mx-auto px-4 md:px-8 lg:px-12 py-8 md:py-12">
         <Portfolio />
         <Divider />
       </main>

@@ -93,7 +93,7 @@ export function PhotoGallery() {
 
   if (loading) {
     return (
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
@@ -119,7 +119,7 @@ export function PhotoGallery() {
   return (
     <>
       {/* Gallery Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
         {images.map((image, index) => (
           <button
             key={image.id}
