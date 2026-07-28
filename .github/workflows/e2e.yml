@@ -9,6 +9,7 @@ on:
     paths:
       - '.github/workflows/e2e.yml'
       - 'e2e/**'
+      - 'playwright.config.ts'
 
 jobs:
   e2e:
@@ -33,4 +34,4 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run E2E against production
-        run: npx playwright test e2e --retries=5
+        run: npx playwright test --retries=5
