@@ -1,4 +1,4 @@
-import { test, expect, type Locator } from '@playwright/test'
+import { test, expect, type Locator, type Page } from '@playwright/test'
 
 const SITE = 'https://anezkabereckova.com'
 
@@ -13,7 +13,25 @@ function decoded(img: Locator) {
     .toBeGreaterThan(0)
 }
 
-test('gallery photos load', async ({ page }) => {
+// The lightbox arrows are hidden on phones, so mobile has to swipe — that is
+// the only way through the gallery there, and worth exercising for real.
+async function nextSlide(page: Page, isMobile: boolean) {
+  if (!isMobile) {
+    await page.getByRole('button', { name: 'Next slide' }).click()
+    return
+  }
+
+  const box = (await page.getByRole('dialog').boundingBox())!
+  const y = box.y + box.height / 2
+  await page.mouse.move(box.x + box.width * 0.8, y)
+  await page.mouse.down()
+  for (let i = 8; i >= 2; i--) {
+    await page.mouse.move(box.x + box.width * (i / 10), y, { steps: 2 })
+  }
+  await page.mouse.up()
+}
+
+test('gallery photos load', async ({ page, isMobile }) => {
   test.setTimeout(180_000)
 
   await page.goto(SITE)
@@ -44,8 +62,50 @@ test('gallery photos load', async ({ page }) => {
     await expect(counter).toHaveText(`${i + 1} / ${count}`)
     await decoded(slides.nth(i))
     if (i < count - 1) {
-      await page.getByRole('button', { name: 'Next slide' }).click()
+      await nextSlide(page, isMobile)
     }
+  }
+
+  await page.getByLabel('Close lightbox').click()
+  await expect(lightbox).toBeHidden()
+})
+
+test('theme toggle switches and persists', async ({ page }) => {
+  await page.goto(SITE)
+
+  // getByLabel matches the aria-label, which only the mounted (interactive)
+  // toggle has — the pre-hydration placeholder is ignored.
+  const toggle = page.getByLabel('Toggle theme')
+  await expect(toggle).toBeVisible()
+
+  // next-themes with attribute="class" puts the theme on <html>.
+  const isDark = () =>
+    page.evaluate(() => document.documentElement.classList.contains('dark'))
+
+  const started = await isDark()
+
+  for (const expected of [!started, started]) {
+    await toggle.click()
+    await expect.poll(isDark).toBe(expected)
+
+    await page.reload()
+    await expect(toggle).toBeVisible()
+    expect(await isDark(), 'theme did not survive a reload').toBe(expected)
+  }
+})
+
+// The layout is responsive, so the failure worth catching is a stray element
+// pushing the page wider than the viewport — invisible on desktop, obvious and
+// ugly on a phone.
+test('pages fit the viewport', async ({ page }) => {
+  for (const path of ['/', '/contact']) {
+    await page.goto(`${SITE}${path}`)
+    await page.locator('main img').first().waitFor()
+
+    const overflow = await page.evaluate(
+      () => document.documentElement.scrollWidth - window.innerWidth
+    )
+    expect(overflow, `${path} scrolls horizontally`).toBeLessThanOrEqual(1)
   }
 })
 
