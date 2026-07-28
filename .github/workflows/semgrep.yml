@@ -30,7 +30,11 @@ jobs:
           docker pull semgrep/semgrep:latest > /dev/null 2>&1
 
           # Run semgrep and capture output
-          docker run --rm -v "${PWD}:/src" semgrep/semgrep:latest semgrep scan --config auto --error --text 2>&1 | tee semgrep-output.txt
+          # Actions stay on major version tags so Dependabot keeps them current
+          # without a SHA churn PR every release; excluded rather than ignored
+          # per-line so there is one place to flip it back on.
+          docker run --rm -v "${PWD}:/src" semgrep/semgrep:latest semgrep scan --config auto --error --text \
+            --exclude-rule yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag 2>&1 | tee semgrep-output.txt
           EXIT_CODE=${PIPESTATUS[0]}
           echo "Exit code: $EXIT_CODE"
           echo "exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
