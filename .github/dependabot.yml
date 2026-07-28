@@ -7,6 +7,10 @@ updates:
     open-pull-requests-limit: 10
     labels:
       - 'github-actions'
+    # Let a freshly published version sit for a week before we take it —
+    # compromised releases usually get pulled well inside that window.
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: 'npm'
     directory: '/'
@@ -16,3 +20,5 @@ updates:
     labels:
       - 'dependencies'
     versioning-strategy: increase-if-necessary
+    cooldown:
+      default-days: 7
