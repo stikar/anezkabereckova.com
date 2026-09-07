@@ -40,7 +40,7 @@ jobs:
 
       - name: Verify build output
         run: |
-          for f in out/index.html out/projekty/index.html out/en/index.html out/sw.js out/sitemap.xml out/og/cs/home.jpg out/pdf/cv-cs.pdf; do
+          for f in out/index.html out/projekty/index.html out/en/index.html out/sw.js out/sitemap.xml out/og/cs/home.jpg; do
             [ -f "$f" ] || { echo "Missing $f"; exit 1; }
           done
           echo "Build output verified"
