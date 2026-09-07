@@ -1,10 +1,8 @@
-import { test, expect, type Locator, type Page } from '@playwright/test'
+import { test, expect, type Locator } from '@playwright/test'
 
-const SITE = 'https://anezkabereckova.com'
+const SITE = process.env.E2E_BASE_URL ?? 'https://anezkabereckova.com'
+const HOST = new URL(SITE).hostname
 
-// A broken <img> is still "visible" to Playwright — naturalWidth is the only
-// honest signal that the browser actually got pixels back. Generous timeout:
-// full-size photos come from Supabase storage with a cold CDN cache.
 function decoded(img: Locator) {
   return expect
     .poll(() => img.evaluate((el: HTMLImageElement) => el.naturalWidth), {
@@ -13,95 +11,83 @@ function decoded(img: Locator) {
     .toBeGreaterThan(0)
 }
 
-// The lightbox arrows are hidden on phones, so mobile has to swipe — that is
-// the only way through the gallery there, and worth exercising for real.
-async function nextSlide(page: Page, isMobile: boolean) {
-  if (!isMobile) {
-    await page.getByRole('button', { name: 'Next slide' }).click()
-    return
-  }
-
-  const box = (await page.getByRole('dialog').boundingBox())!
-  const y = box.y + box.height / 2
-  await page.mouse.move(box.x + box.width * 0.8, y)
-  await page.mouse.down()
-  for (let i = 8; i >= 2; i--) {
-    await page.mouse.move(box.x + box.width * (i / 10), y, { steps: 2 })
-  }
-  await page.mouse.up()
+async function scrollThrough(page: import('@playwright/test').Page) {
+  await page.evaluate(async () => {
+    const step = window.innerHeight * 0.8
+    for (let y = 0; y < document.body.scrollHeight; y += step) {
+      window.scrollTo(0, y)
+      await new Promise((r) => setTimeout(r, 120))
+    }
+    window.scrollTo(0, 0)
+  })
 }
 
-test('gallery photos load', async ({ page, isMobile }) => {
-  test.setTimeout(180_000)
-
-  await page.goto(SITE)
-
-  // Gallery is fetched client-side from Supabase, so wait for a real thumbnail
-  // instead of the loading skeleton / "No images in gallery yet" fallback.
-  const thumbs = page.locator('main button img')
-  await expect(thumbs.first()).toBeVisible()
-
-  const count = await thumbs.count()
-  expect(count).toBeGreaterThan(0)
-
-  for (let i = 0; i < count; i++) {
-    await decoded(thumbs.nth(i))
-  }
-
-  // Thumbnails and full-size images are different files behind different
-  // transforms — a working grid says nothing about the lightbox.
-  await page.locator('main button').first().click()
-
-  const lightbox = page.getByRole('dialog')
-  const counter = lightbox.getByText(/^\d+ \/ \d+$/)
-  await expect(counter).toHaveText(`1 / ${count}`)
-
-  // Slides render in image order, so nth(i) is the one the counter points at.
-  const slides = lightbox.locator('img')
-  for (let i = 0; i < count; i++) {
-    await expect(counter).toHaveText(`${i + 1} / ${count}`)
-    await decoded(slides.nth(i))
-    if (i < count - 1) {
-      await nextSlide(page, isMobile)
+test('home: name, film hero, Vanity Fair line, no third parties', async ({
+  page,
+}) => {
+  const external: string[] = []
+  page.on('request', (req) => {
+    const u = new URL(req.url())
+    if (u.hostname !== HOST && u.protocol.startsWith('http')) {
+      external.push(req.url())
     }
-  }
-
-  await page.getByLabel('Close lightbox').click()
-  await expect(lightbox).toBeHidden()
-})
-
-test('theme toggle switches and persists', async ({ page }) => {
+  })
   await page.goto(SITE)
-
-  // getByLabel matches the aria-label, which only the mounted (interactive)
-  // toggle has — the pre-hydration placeholder is ignored.
-  const toggle = page.getByLabel('Toggle theme')
-  await expect(toggle).toBeVisible()
-
-  // next-themes with attribute="class" puts the theme on <html>.
-  const isDark = () =>
-    page.evaluate(() => document.documentElement.classList.contains('dark'))
-
-  const started = await isDark()
-
-  for (const expected of [!started, started]) {
-    await toggle.click()
-    await expect.poll(isDark).toBe(expected)
-
-    await page.reload()
-    await expect(toggle).toBeVisible()
-    expect(await isDark(), 'theme did not survive a reload').toBe(expected)
-  }
+  await expect(
+    page.getByRole('heading', { level: 1, name: /Anežka Berecková/i })
+  ).toBeVisible()
+  await decoded(page.locator('main img').first())
+  await scrollThrough(page)
+  await expect(page.getByText(/Vanity Fair/).first()).toBeVisible()
+  expect(external, 'third-party requests').toEqual([])
+  expect(await page.context().cookies(), 'cookies').toEqual([])
 })
 
-// The layout is responsive, so the failure worth catching is a stray element
-// pushing the page wider than the viewport — invisible on desktop, obvious and
-// ugly on a phone.
-test('pages fit the viewport', async ({ page }) => {
-  for (const path of ['/', '/contact']) {
-    await page.goto(`${SITE}${path}`)
-    await page.locator('main img').first().waitFor()
+test('project detail: gallery decodes, LOOK labels present', async ({
+  page,
+}) => {
+  test.setTimeout(120_000)
+  await page.goto(`${SITE}/projekty/milano-cortina-2026/`)
+  await scrollThrough(page)
+  await expect(page.getByText(/LOOK 01 \/ \d+/).first()).toBeVisible()
 
+  const imgs = page.locator('main img')
+  const count = await imgs.count()
+  expect(count).toBeGreaterThan(10)
+  let checked = 0
+  for (let i = 0; i < count && checked < 12; i++) {
+    const box = await imgs.nth(i).boundingBox()
+    if (!box || box.width < 1 || box.height < 1) continue
+    await imgs.nth(i).scrollIntoViewIfNeeded()
+    await decoded(imgs.nth(i))
+    checked++
+  }
+  expect(checked).toBeGreaterThan(5)
+})
+
+test('look URL opens story mode and closes back to the project', async ({
+  page,
+}) => {
+  await page.goto(`${SITE}/projekty/new-breath-ss22/look-03/`)
+  const dialog = page.getByRole('dialog')
+  await expect(dialog).toBeVisible()
+  await expect(dialog.getByText(/03 \/ \d+/)).toBeVisible()
+  await page.keyboard.press('Escape')
+  await expect(dialog).toBeHidden()
+  expect(new URL(page.url()).pathname).toBe('/projekty/new-breath-ss22/')
+})
+
+test('pages fit the viewport', async ({ page }) => {
+  for (const path of [
+    '/',
+    '/projekty/',
+    '/o-mne/',
+    '/press/',
+    '/kontakt/',
+    '/en/',
+  ]) {
+    await page.goto(`${SITE}${path}`)
+    await scrollThrough(page)
     const overflow = await page.evaluate(
       () => document.documentElement.scrollWidth - window.innerWidth
     )
@@ -109,14 +95,22 @@ test('pages fit the viewport', async ({ page }) => {
   }
 })
 
-test('contact page loads', async ({ page }) => {
-  await page.goto(`${SITE}/contact`)
+test('contact and language mirror', async ({ page }) => {
+  await page.goto(`${SITE}/kontakt/`)
+  await expect(
+    page.getByRole('link', { name: /contact@anezkabereckova\.com/i }).first()
+  ).toBeVisible()
 
-  await expect(
-    page.getByRole('heading', { name: 'Anežka Berecková' })
-  ).toBeVisible()
-  await expect(
-    page.getByRole('link', { name: 'contact@anezkabereckova.com' })
-  ).toBeVisible()
-  await decoded(page.getByAltText('Anežka Berecková'))
+  await page.goto(`${SITE}/en/about/`)
+  expect(await page.evaluate(() => document.documentElement.lang)).toBe('en')
+  await expect(page.locator('link[hreflang="cs"]')).toHaveAttribute(
+    'href',
+    /\/o-mne\/?$/
+  )
+})
+
+test('404 shows the ghost look', async ({ page }) => {
+  const res = await page.goto(`${SITE}/tenhle-look-neexistuje/`)
+  expect(res?.status()).toBe(404)
+  await expect(page.getByText(/JEŠTĚ NEEXISTUJE/)).toBeVisible()
 })

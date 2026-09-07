@@ -1,0 +1,653 @@
+{
+  "sets": {
+    "milano-cortina-2026": {
+      "dir": "drive-download-20260904T085946Z-1-001",
+      "code": "WOG26",
+      "photos": [
+        {
+          "slug": "look-01",
+          "file": "Kopie souboru Kopie souboru AP_21.jpg",
+          "kind": "look",
+          "n": 1,
+          "alt": "Milano Cortina 2026, LOOK 01 — dvojice v celé postavě, oversize svetr a kraťasy, lyže",
+          "hero": true
+        },
+        {
+          "slug": "look-02",
+          "file": "Kopie souboru Kopie souboru AP_23.jpg",
+          "kind": "look",
+          "n": 2,
+          "alt": "Milano Cortina 2026, LOOK 02 — tváře a detail oversize svetru s ornamentem"
+        },
+        {
+          "slug": "look-03",
+          "file": "Kopie souboru Kopie souboru IMG_7272 copy.jpg",
+          "kind": "look",
+          "n": 3,
+          "alt": "Milano Cortina 2026, LOOK 03 — dlouhá huňatá šála, portrétní detail"
+        },
+        {
+          "slug": "look-04",
+          "file": "Kopie souboru Kopie souboru IMG_7702 copy 2.jpg",
+          "kind": "look",
+          "n": 4,
+          "alt": "Milano Cortina 2026, LOOK 04 — dvojice v bílých bundách"
+        },
+        {
+          "slug": "look-05",
+          "file": "Kopie souboru Kopie souboru 10.jpg",
+          "kind": "look",
+          "n": 5,
+          "alt": "Milano Cortina 2026, LOOK 05 — bílá bunda, lyže na rameni"
+        },
+        {
+          "slug": "look-06",
+          "file": "Kopie souboru Kopie souboru 6.jpg",
+          "kind": "look",
+          "n": 6,
+          "alt": "Milano Cortina 2026, LOOK 06 — bílá bunda, červený nákrčník, čelovka"
+        },
+        {
+          "slug": "look-07",
+          "file": "Kopie souboru Kopie souboru AP_13_2.jpg",
+          "kind": "look",
+          "n": 7,
+          "alt": "Milano Cortina 2026, LOOK 07 — lyže před tváří, bílá bunda"
+        },
+        {
+          "slug": "look-08",
+          "file": "Kopie souboru Kopie souboru AP_29.jpg",
+          "kind": "look",
+          "n": 8,
+          "alt": "Milano Cortina 2026, LOOK 08 — profil s brýlemi, bílá bunda"
+        },
+        {
+          "slug": "look-09",
+          "file": "Kopie souboru Kopie souboru AP_26.jpg",
+          "kind": "look",
+          "n": 9,
+          "alt": "Milano Cortina 2026, LOOK 09 — profil s kulichem v protisvětle"
+        },
+        {
+          "slug": "look-10",
+          "file": "Kopie souboru Kopie souboru IMG_7677 copy.jpg",
+          "kind": "look",
+          "n": 10,
+          "alt": "Milano Cortina 2026, LOOK 10 — dlouhý péřový kabát"
+        },
+        {
+          "slug": "look-11",
+          "file": "Kopie souboru Kopie souboru IMG_7426 copy.jpg",
+          "kind": "look",
+          "n": 11,
+          "alt": "Milano Cortina 2026, LOOK 11 — oversize svetr, batoh a kraťasy"
+        },
+        {
+          "slug": "look-12",
+          "file": "Kopie souboru Kopie souboru IMG_7389 copy 2.jpg",
+          "kind": "look",
+          "n": 12,
+          "alt": "Milano Cortina 2026, LOOK 12 — svetr s lyžemi v celé postavě"
+        },
+        {
+          "slug": "look-13",
+          "file": "Kopie souboru Kopie souboru IMG_7098 coy.jpg",
+          "kind": "look",
+          "n": 13,
+          "alt": "Milano Cortina 2026, LOOK 13 — záda s nápisem CZE, lyže"
+        },
+        {
+          "slug": "look-14",
+          "file": "Kopie souboru Kopie souboru 7.jpg",
+          "kind": "look",
+          "n": 14,
+          "alt": "Milano Cortina 2026, LOOK 14 — ležící postava ve svetru shora"
+        },
+        {
+          "slug": "look-15",
+          "file": "Kopie souboru Kopie souboru AP_17.jpg",
+          "kind": "look",
+          "n": 15,
+          "alt": "Milano Cortina 2026, LOOK 15 — sedící s lyžemi a batohem"
+        },
+        {
+          "slug": "look-16",
+          "file": "Kopie souboru Kopie souboru AP_33.jpg",
+          "kind": "look",
+          "n": 16,
+          "alt": "Milano Cortina 2026, LOOK 16 — dvojice s brýlemi"
+        },
+        {
+          "slug": "look-17",
+          "file": "Kopie souboru Kopie souboru AP_34.jpg",
+          "kind": "look",
+          "n": 17,
+          "alt": "Milano Cortina 2026, LOOK 17 — dvojice, rozostřená postava vpředu"
+        },
+        {
+          "slug": "look-18",
+          "file": "Kopie souboru Kopie souboru AP_4.jpg",
+          "kind": "look",
+          "n": 18,
+          "alt": "Milano Cortina 2026, LOOK 18 — funkční base layer a hole"
+        },
+        {
+          "slug": "look-19",
+          "file": "Kopie souboru Kopie souboru AP_8.jpg",
+          "kind": "look",
+          "n": 19,
+          "alt": "Milano Cortina 2026, LOOK 19 — base layer s lyžemi ve sněhu"
+        },
+        {
+          "slug": "motion-01",
+          "file": "Kopie souboru Kopie souboru AP_35.jpg",
+          "kind": "transition",
+          "alt": "Milano Cortina 2026 — silueta v pohybu"
+        },
+        {
+          "slug": "motion-02",
+          "file": "Kopie souboru Kopie souboru IMG_7598-2 copy.jpg",
+          "kind": "transition",
+          "alt": "Milano Cortina 2026 — trojice, šála, sníh v pohybu"
+        }
+      ]
+    },
+    "new-breath-ss22": {
+      "dir": "drive-download-20260904T090230Z-1-001/diplomka",
+      "code": "SS22",
+      "photos": [
+        {
+          "slug": "look-01",
+          "file": "anezkab-0011-edit.jpg",
+          "kind": "look",
+          "n": 1,
+          "side": "front",
+          "pair": "look-01-back",
+          "alt": "NEW BREATH SS22, LOOK 01 — zepředu",
+          "hero": true
+        },
+        {
+          "slug": "look-01-back",
+          "file": "anezkab-0012-edit.jpg",
+          "kind": "look",
+          "n": 1,
+          "side": "back",
+          "pair": "look-01",
+          "alt": "NEW BREATH SS22, LOOK 01 — zezadu"
+        },
+        {
+          "slug": "look-02",
+          "file": "anezkab-0001.jpg",
+          "kind": "look",
+          "n": 2,
+          "side": "front",
+          "pair": "look-02-back",
+          "alt": "NEW BREATH SS22, LOOK 02 — zepředu"
+        },
+        {
+          "slug": "look-02-back",
+          "file": "anezkab-0002-edit.jpg",
+          "kind": "look",
+          "n": 2,
+          "side": "back",
+          "pair": "look-02",
+          "alt": "NEW BREATH SS22, LOOK 02 — zezadu"
+        },
+        {
+          "slug": "look-03",
+          "file": "anezkab-0004-edit.jpg",
+          "kind": "look",
+          "n": 3,
+          "side": "front",
+          "pair": "look-03-back",
+          "alt": "NEW BREATH SS22, LOOK 03 — zepředu"
+        },
+        {
+          "slug": "look-03-back",
+          "file": "anezkab-0003-edit.jpg",
+          "kind": "look",
+          "n": 3,
+          "side": "back",
+          "pair": "look-03",
+          "alt": "NEW BREATH SS22, LOOK 03 — zezadu"
+        },
+        {
+          "slug": "look-04",
+          "file": "anezkab-0005.jpg",
+          "kind": "look",
+          "n": 4,
+          "side": "front",
+          "pair": "look-04-back",
+          "alt": "NEW BREATH SS22, LOOK 04 — zepředu"
+        },
+        {
+          "slug": "look-04-back",
+          "file": "anezkab-0006-edit.jpg",
+          "kind": "look",
+          "n": 4,
+          "side": "back",
+          "pair": "look-04",
+          "alt": "NEW BREATH SS22, LOOK 04 — zezadu"
+        },
+        {
+          "slug": "look-05",
+          "file": "anezkab-0013.jpg",
+          "kind": "look",
+          "n": 5,
+          "side": "front",
+          "pair": "look-05-back",
+          "alt": "NEW BREATH SS22, LOOK 05 — zepředu"
+        },
+        {
+          "slug": "look-05-back",
+          "file": "anezkab-0014.jpg",
+          "kind": "look",
+          "n": 5,
+          "side": "back",
+          "pair": "look-05",
+          "alt": "NEW BREATH SS22, LOOK 05 — zezadu"
+        },
+        {
+          "slug": "look-06",
+          "file": "anezkab-0016-edit.jpg",
+          "kind": "look",
+          "n": 6,
+          "alt": "NEW BREATH SS22, LOOK 06 — detail, bílá kšiltovka",
+          "card": true
+        },
+        {
+          "slug": "look-07",
+          "file": "anezkab-0022-edit.jpg",
+          "kind": "look",
+          "n": 7,
+          "alt": "NEW BREATH SS22, LOOK 07 — žlutá kšiltovka, sed"
+        },
+        {
+          "slug": "look-08",
+          "file": "anezkab-0034.jpg",
+          "kind": "look",
+          "n": 8,
+          "alt": "NEW BREATH SS22, LOOK 08 — výřez na zádech"
+        },
+        {
+          "slug": "look-09",
+          "file": "anezkab-0035.jpg",
+          "kind": "look",
+          "n": 9,
+          "alt": "NEW BREATH SS22, LOOK 09"
+        },
+        {
+          "slug": "look-10",
+          "file": "anezkab-0041.jpg",
+          "kind": "look",
+          "n": 10,
+          "alt": "NEW BREATH SS22, LOOK 10"
+        },
+        {
+          "slug": "look-11",
+          "file": "anezkab-0044.jpg",
+          "kind": "look",
+          "n": 11,
+          "side": "front",
+          "pair": "look-11-back",
+          "alt": "NEW BREATH SS22, LOOK 11 — zepředu"
+        },
+        {
+          "slug": "look-11-back",
+          "file": "anezkab-0043.jpg",
+          "kind": "look",
+          "n": 11,
+          "side": "back",
+          "pair": "look-11",
+          "alt": "NEW BREATH SS22, LOOK 11 — zezadu"
+        },
+        {
+          "slug": "look-12",
+          "file": "anezkab-0045.jpg",
+          "kind": "look",
+          "n": 12,
+          "side": "front",
+          "pair": "look-12-back",
+          "alt": "NEW BREATH SS22, LOOK 12 — zepředu"
+        },
+        {
+          "slug": "look-12-back",
+          "file": "anezkab-0046.jpg",
+          "kind": "look",
+          "n": 12,
+          "side": "back",
+          "pair": "look-12",
+          "alt": "NEW BREATH SS22, LOOK 12 — zezadu"
+        },
+        {
+          "slug": "look-13",
+          "file": "anezkab-0048.jpg",
+          "kind": "look",
+          "n": 13,
+          "side": "front",
+          "pair": "look-13-back",
+          "alt": "NEW BREATH SS22, LOOK 13 — zepředu"
+        },
+        {
+          "slug": "look-13-back",
+          "file": "anezkab-0049.jpg",
+          "kind": "look",
+          "n": 13,
+          "side": "back",
+          "pair": "look-13",
+          "alt": "NEW BREATH SS22, LOOK 13 — zezadu"
+        }
+      ]
+    },
+    "princess-fw19": {
+      "dir": "starší kolekce/kolekce PRINCESS/foto_lookbook_FW19/wetransfer-ba318e",
+      "code": "FW19",
+      "photos": [
+        {
+          "slug": "look-01",
+          "file": "toto.jpg",
+          "kind": "look",
+          "n": 1,
+          "alt": "PRINCESS FW19, LOOK 01",
+          "hero": true
+        },
+        {
+          "slug": "look-02",
+          "file": "toto2.jpg",
+          "kind": "look",
+          "n": 2,
+          "alt": "PRINCESS FW19, LOOK 02"
+        },
+        {
+          "slug": "look-03",
+          "file": "toto3.jpg",
+          "kind": "look",
+          "n": 3,
+          "alt": "PRINCESS FW19, LOOK 03"
+        },
+        {
+          "slug": "look-04",
+          "file": "2.jpg",
+          "kind": "look",
+          "n": 4,
+          "alt": "PRINCESS FW19, LOOK 04 — organza pod květy"
+        },
+        {
+          "slug": "look-05",
+          "file": "_MG_5136 kopie.jpg",
+          "kind": "look",
+          "n": 5,
+          "alt": "PRINCESS FW19, LOOK 05 — trojice ležící"
+        },
+        {
+          "slug": "look-06",
+          "file": "_MG_5155.jpg",
+          "kind": "look",
+          "n": 6,
+          "alt": "PRINCESS FW19, LOOK 06 — trojice, na šířku",
+          "wide": true
+        },
+        {
+          "slug": "look-07",
+          "file": "_MG_5162 kopie.jpg",
+          "kind": "look",
+          "n": 7,
+          "alt": "PRINCESS FW19, LOOK 07 — shora, na šířku",
+          "wide": true
+        },
+        {
+          "slug": "look-08",
+          "file": "_MG_5166 kopie.jpg",
+          "kind": "look",
+          "n": 8,
+          "alt": "PRINCESS FW19, LOOK 08 — detail, tvář"
+        },
+        {
+          "slug": "look-09",
+          "file": "_MG_5197.jpg",
+          "kind": "look",
+          "n": 9,
+          "alt": "PRINCESS FW19, LOOK 09 — trojice sedící, na šířku",
+          "wide": true
+        },
+        {
+          "slug": "look-10",
+          "file": "_MG_5211.jpg",
+          "kind": "look",
+          "n": 10,
+          "alt": "PRINCESS FW19, LOOK 10 — černobílý detail korzetu",
+          "bw": true
+        },
+        {
+          "slug": "look-11",
+          "file": "_MG_5240 kopie.jpg",
+          "kind": "look",
+          "n": 11,
+          "alt": "PRINCESS FW19, LOOK 11 — mikina v květech"
+        },
+        {
+          "slug": "look-12",
+          "file": "_MG_5346.jpg",
+          "kind": "look",
+          "n": 12,
+          "alt": "PRINCESS FW19, LOOK 12 — dvě hlavy, detail"
+        },
+        {
+          "slug": "look-13",
+          "file": "_MG_5443.jpg",
+          "kind": "look",
+          "n": 13,
+          "alt": "PRINCESS FW19, LOOK 13 — černobílá s květy",
+          "bw": true
+        },
+        {
+          "slug": "look-14",
+          "file": "_MG_5468 kopie.jpg",
+          "kind": "look",
+          "n": 14,
+          "alt": "PRINCESS FW19, LOOK 14 — lila latex, dvě postavy"
+        },
+        {
+          "slug": "motion-01",
+          "file": "_MG_5504 kopie.jpg",
+          "kind": "transition",
+          "alt": "PRINCESS FW19 — dlaň do objektivu"
+        },
+        {
+          "slug": "motion-02",
+          "file": "_MG_5250 kopie.jpg",
+          "kind": "transition",
+          "alt": "PRINCESS FW19 — blond s větví, blesk"
+        }
+      ]
+    },
+    "poisoned-mind": {
+      "dir": "drive-download-20260904T090230Z-1-001/bakalářka",
+      "code": "BA",
+      "photos": [
+        {
+          "slug": "editorial-01",
+          "file": "0108-anezkafashion .jpg",
+          "kind": "editorial",
+          "n": 1,
+          "alt": "POISONED MIND, EDITORIAL 01 — záda s popruhem",
+          "hero": true,
+          "card": true
+        },
+        {
+          "slug": "editorial-02",
+          "file": "0068-anezkafashion.jpg",
+          "kind": "editorial",
+          "n": 2,
+          "alt": "POISONED MIND, EDITORIAL 02 — portrét se samolepkami"
+        },
+        {
+          "slug": "editorial-03",
+          "file": "0086-anezkafashion.jpg",
+          "kind": "editorial",
+          "n": 3,
+          "alt": "POISONED MIND, EDITORIAL 03 — oranžová bunda a pás"
+        },
+        {
+          "slug": "editorial-04",
+          "file": "0093-anezkafashion.jpg",
+          "kind": "editorial",
+          "n": 4,
+          "alt": "POISONED MIND, EDITORIAL 04"
+        },
+        {
+          "slug": "editorial-05",
+          "file": "0109-anezkafashion.jpg",
+          "kind": "editorial",
+          "n": 5,
+          "alt": "POISONED MIND, EDITORIAL 05"
+        },
+        {
+          "slug": "editorial-06",
+          "file": "0118-anezkafashion-Edit.jpg",
+          "kind": "editorial",
+          "n": 6,
+          "alt": "POISONED MIND, EDITORIAL 06 — navy, popruh"
+        },
+        {
+          "slug": "editorial-07",
+          "file": "0131-anezkafashion-Edit.jpg",
+          "kind": "editorial",
+          "n": 7,
+          "alt": "POISONED MIND, EDITORIAL 07"
+        },
+        {
+          "slug": "look-01",
+          "file": "lookbook + text/Kopie souboru 0002-anezkafashion.jpg",
+          "kind": "look",
+          "n": 1,
+          "side": "front",
+          "pair": "look-01-back",
+          "alt": "POISONED MIND, LOOK 01 — černý kabát zepředu"
+        },
+        {
+          "slug": "look-01-back",
+          "file": "lookbook + text/Kopie souboru 0003-anezkafashion.jpg",
+          "kind": "look",
+          "n": 1,
+          "side": "back",
+          "pair": "look-01",
+          "alt": "POISONED MIND, LOOK 01 — černý kabát z boku"
+        },
+        {
+          "slug": "look-02",
+          "file": "lookbook + text/Kopie souboru 0007-anezkafashion.jpg",
+          "kind": "look",
+          "n": 2,
+          "alt": "POISONED MIND, LOOK 02"
+        },
+        {
+          "slug": "look-03",
+          "file": "lookbook + text/Kopie souboru 0011-anezkafashion.jpg",
+          "kind": "look",
+          "n": 3,
+          "alt": "POISONED MIND, LOOK 03 — záda, popruhy"
+        },
+        {
+          "slug": "look-04",
+          "file": "lookbook + text/Kopie souboru 0014-anezkafashion.jpg",
+          "kind": "look",
+          "n": 4,
+          "alt": "POISONED MIND, LOOK 04 — šedý denim a pás"
+        },
+        {
+          "slug": "look-05",
+          "file": "lookbook + text/Kopie souboru 0016-anezkafashion.jpg",
+          "kind": "look",
+          "n": 5,
+          "alt": "POISONED MIND, LOOK 05 — drásaný denim zezadu"
+        },
+        {
+          "slug": "look-06",
+          "file": "lookbook + text/Kopie souboru 0019-anezkafashion.jpg",
+          "kind": "look",
+          "n": 6,
+          "alt": "POISONED MIND, LOOK 06"
+        },
+        {
+          "slug": "look-07",
+          "file": "lookbook + text/Kopie souboru 0024-anezkafashion.jpg",
+          "kind": "look",
+          "n": 7,
+          "alt": "POISONED MIND, LOOK 07"
+        },
+        {
+          "slug": "look-08",
+          "file": "lookbook + text/Kopie souboru 0031-anezkafashion.jpg",
+          "kind": "look",
+          "n": 8,
+          "alt": "POISONED MIND, LOOK 08"
+        },
+        {
+          "slug": "look-09",
+          "file": "lookbook + text/Kopie souboru 0038-anezkafashion.jpg",
+          "kind": "look",
+          "n": 9,
+          "side": "front",
+          "pair": "look-09-back",
+          "alt": "POISONED MIND, LOOK 09 — broskvová bunda zepředu"
+        },
+        {
+          "slug": "look-09-back",
+          "file": "lookbook + text/Kopie souboru 0041-anezkafashion-Edit.jpg",
+          "kind": "look",
+          "n": 9,
+          "side": "back",
+          "pair": "look-09",
+          "alt": "POISONED MIND, LOOK 09 — broskvová bunda zezadu"
+        },
+        {
+          "slug": "detail-01",
+          "file": "0108-anezkafashion .jpg",
+          "kind": "detail",
+          "crop": {
+            "left": 0.3,
+            "top": 0.2,
+            "width": 0.45
+          },
+          "alt": "POISONED MIND — detail popruhu"
+        },
+        {
+          "slug": "detail-02",
+          "file": "lookbook + text/Kopie souboru 0016-anezkafashion.jpg",
+          "kind": "detail",
+          "crop": {
+            "left": 0.25,
+            "top": 0.28,
+            "width": 0.5
+          },
+          "alt": "POISONED MIND — detail drásaného denimu"
+        },
+        {
+          "slug": "detail-03",
+          "file": "0086-anezkafashion.jpg",
+          "kind": "detail",
+          "crop": {
+            "left": 0.15,
+            "top": 0.42,
+            "width": 0.6
+          },
+          "alt": "POISONED MIND — detail pásu"
+        }
+      ]
+    },
+    "about": {
+      "dir": "drive-download-20260904T085946Z-1-001",
+      "code": "",
+      "photos": [
+        {
+          "slug": "portrait",
+          "file": "stará fotografie_nevím zda používat.jpeg",
+          "kind": "portrait",
+          "alt": "Anežka Berecková, portrét",
+          "maxWidth": 1100
+        }
+      ]
+    }
+  }
+}

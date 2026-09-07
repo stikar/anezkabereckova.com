@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
@@ -34,28 +34,12 @@ jobs:
       - name: Type check
         run: npx tsc --noEmit
 
-      - name: Build
+      - name: Build (generate + next build + sitemap/sw)
         run: npm run build
-        env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ vars.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
 
       - name: Check build output
         run: |
-          if [ ! -d "out" ]; then
-            echo "Build output directory 'out' not found"
-            exit 1
-          fi
-          if [ ! -f "out/index.html" ]; then
-            echo "index.html not found in build output"
-            exit 1
-          fi
-          if [ ! -d "out/contact" ]; then
-            echo "contact directory not found in build output"
-            exit 1
-          fi
-          if [ ! -f "out/contact/index.html" ]; then
-            echo "contact/index.html not found in build output"
-            exit 1
-          fi
-          echo "Build output verified successfully (index.html and contact page found)"
+          for f in out/index.html out/projekty/index.html out/en/index.html out/sw.js out/sitemap.xml out/robots.txt out/manifest.webmanifest; do
+            [ -f "$f" ] || { echo "Missing $f"; exit 1; }
+          done
+          echo "Build output verified"

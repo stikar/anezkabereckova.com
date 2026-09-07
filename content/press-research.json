@@ -1,0 +1,620 @@
+[
+  {
+    "url": "https://www.irozhlas.cz/sport/olympijske-hry/alpine-pro-ceska-zimni-olympijska-kolekce-2026-obleceni-zoh-navrharka_2511141300_ako",
+    "outlet": "iROZHLAS",
+    "title": "Olympijská kolekce je hodně výrazná. Spojuje nádech retro stylu s moderními trendy, říká její návrhářka",
+    "date": "2025-11-14",
+    "date_note": "page: Praha 13:00 14. listopadu 2025; URL 2511141300",
+    "type": "rozhovor",
+    "author": "Anna Jadrná",
+    "quotes": [
+      {
+        "text": "Tuto barevnost jsem brala spíše tak, že jsem se dívala na to, co tomu oděvu bude slušet více.",
+        "context": "volba barev"
+      },
+      {
+        "text": "Tmavě modrá je více elegantní a působí důstojněji než ta křiklavá modrá, která byla použita předtím.",
+        "context": "tmavě modrá"
+      },
+      {
+        "text": "Celá kolekce má být v retro duchu 60. a 70. let. A rukavice na šňůrce k tomu patří. Všichni je známe z dětství, a je to opravdu i praktické.",
+        "context": "rukavice na šňůrce"
+      },
+      {
+        "text": "Nechceme napodobit to, co bylo předtím. Proto je tam jenom ten nádech. S tím, že se použijí současné siluety a trendy v odívání.",
+        "context": "retro vs. současnost"
+      }
+    ],
+    "extra_quotes": [
+      {
+        "text": "Věnuji se tomu celý svůj život.",
+        "context": "o designu oděvů"
+      },
+      {
+        "text": "Fáze návrhů byla asi necelý měsíc. Pak ale celý proces od vybrání návrhů, doladění věcí a prvních vzorků trval alespoň půl roku.",
+        "context": "délka procesu"
+      },
+      {
+        "text": "Podle mě se nedá zavděčit každému. Tato kolekce je hodně výrazná. A jestli má někdo rád minimalismus, tak se mu v zásadě líbit nemůže. Je to vždy padesát na padesát.",
+        "context": "reakce veřejnosti"
+      },
+      {
+        "text": "Protože chceme být přece zlatí olympionici.",
+        "context": "proč zlatá"
+      },
+      {
+        "text": "Je to hodně těžké. Člověk musí počítat i s výrobou. Myslet na to, jestli se to dá dobře vyrobit a replikovat tolikrát, kolikrát potřebujeme.",
+        "context": "vyvážení designu a praxe"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "chrome (WebFetch and curl returned 403)"
+  },
+  {
+    "url": "https://www.irozhlas.cz/sport/olympijske-hry/olympijska-kolekce-cesti-sportovci-fotky-milan-2026-jak-bude-vypadat_2511121415_mim",
+    "outlet": "iROZHLAS",
+    "title": "FOTO: Svetr i vyhřívaný kabát. Olympionici ukázali kolekci pro Milán. Návrh bych nevybral, říká Kejval",
+    "date": "2025-11-12",
+    "date_note": "page: Praha 14:15 12. 11. 2025; URL 2511121415",
+    "type": "clanek",
+    "author": "Karel Schamberger, ČTK",
+    "quotes": [
+      {
+        "text": "Byla to pro mě obrovská kreativní výzva i čest – možnost ukázat, že sportovní oblečení může mít nejen funkční, ale i estetickou a symbolickou rovinu.",
+        "context": "o zakázce"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "chrome (WebFetch and curl returned 403)"
+  },
+  {
+    "url": "https://www.irozhlas.cz/sport/zimni-sporty/obrazem-kasmir-s-ornamenty-i-perova-sukne-olympijske-uniformy-odrazi-narodni_2602051414_aru",
+    "outlet": "iROZHLAS",
+    "title": "OBRAZEM: Kašmír s ornamenty i péřová sukně. Sportovci v pátek představí své olympijské uniformy",
+    "date": "2026-02-05",
+    "date_note": "page: Milán / Cortina d’Ampezzo 14:14 5. února 2026; URL 2602051414",
+    "type": "clanek",
+    "quotes": [],
+    "mention_of_anezka": "Český olympijský tým oblékla značka Alpine Pro, která se této práce chopila již podeváté. Designérka Anežka Berecková stojí za finálními návrhy. Kolekci graficky zpracoval akademický malíř Milan Jaroš, který se inspiroval grafikem a ilustrátorem Vojtěchem Preissigem.",
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "chrome (WebFetch and curl returned 403)"
+  },
+  {
+    "url": "https://www.czechdesign.cz/temata-a-rubriky/nevim-zda-by-cesi-absenci-trikolory-ustali-designerka-olympijske-kolekce-mluvi-o-kompromisech-ktere-musela-udelat",
+    "outlet": "CzechDesign",
+    "title": "Nevím, zda by Češi absenci trikolory ustáli. Designérka olympijské kolekce mluví o kompromisech, které musela udělat",
+    "date": "2025-12-26",
+    "type": "rozhovor",
+    "author": "Magda Žůrková",
+    "quotes": [
+      {
+        "text": "Nepřijde mi, že tvorba kolekce je omezená skrze materiál. Spíš jde o cenu. Musíme počítat s tím, že jakýkoli další prvek je navýšením finální ceny produktu. Může se jednat o šev navíc, kapsu – jakýkoli detail zdražuje produkt.",
+        "context": "materiál vs. cena"
+      },
+      {
+        "text": "V této kolekci jsem barevnou škálu pouze trochu posunula: námořnická modrá, sytá červená, mandlově bílá a okrová, která znázorňuje zlato.",
+        "context": "barevná škála"
+      },
+      {
+        "text": "Podařila se mi nějaká část, ale některé detaily se mi prosadit nepodařilo. Přála bych si, aby vše bylo více harmonicky propojeno. Například velký nápis CZE byl požadavek Olympijského výboru. Původně byla v kolekci na nástup obří oboustranná šála, ze které vznikla úzká šálička.",
+        "context": "kompromisy"
+      },
+      {
+        "text": "Nejspíš zvolit jasné, přesné prvky na oděvu. Ne si hrát na umění. Pokud používáme designové prvky, musí být jasně rozpoznatelné. Ten design by měl být lidem přístupný. I volba barevnosti je důležitá.",
+        "context": "jak projít u národa"
+      }
+    ],
+    "extra_quotes": [
+      {
+        "text": "Nevím, jestli je na to české publikum připravené.",
+        "context": "jiné barvy než trikolora"
+      },
+      {
+        "text": "Státní vlajka je nejvíc, čeho se můžeš držet, pokud tvoříš něco, co reprezentuje danou zemi. Je obtížné prosadit jinou barevnost, ale za mě je to jen přínos pro samotný oděv.",
+        "context": "trikolora"
+      },
+      {
+        "text": "Sportswear jsem vnímala jako velmi silnou vlnu, která v době mého studia velmi výrazně pronikala do módy. Nebyla to moje specializace, ale tato fúze se mi velmi líbila a myslím, že částečně do mé tvorby na škole pronikla. Teď do sportswearu pronikám víc do hloubky a zjišťuji jeho výhody i úskalí.",
+        "context": "vztah ke sportswearu"
+      },
+      {
+        "text": "Když se nad tím zamyslím, byly to hodně věci, které vycházely z nějakých vnitřních pocitů, zkušeností nebo zážitků. Velkou roli ve většině kolekcí hrála žena a její vývoj, růst a proměnlivost. Formu pak určovalo aktuální rozpoložení a záměr zpracovat určitou techniku nebo materiál.",
+        "context": "témata školních prací"
+      },
+      {
+        "text": "Díky tomu, že v Alpine Pro pracuji už čtyři roky, tento typ materiálů dobře znám, stejně jako jejich vlastnosti.",
+        "context": "znalost materiálů"
+      }
+    ],
+    "bio_from_article": "Anežka Berecková vystudovala Střední školu uměleckoprůmyslovou v Uherském Hradišti a poté magisterský obor Design oděvu na UTB ve Zlíně. Do Alpine Pro nastoupila hned po dokončení studia a vytváří zde celé soubory oděvů pro korporátní zákazníky, které jsou upravené pro jejich cílovou skupinu.",
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "curl (WebFetch returned 403)"
+  },
+  {
+    "url": "https://www.czechdesign.cz/temata-a-rubriky/alpine-pro-predstavuje-olympijskou-kolekci-ktera-je-inspirovana-historii-ceske-grafiky",
+    "outlet": "CzechDesign",
+    "title": "Alpine Pro představuje olympijskou kolekci, která je inspirovaná historií české grafiky",
+    "date": "2025-11-12",
+    "type": "clanek",
+    "quotes": [
+      {
+        "text": "Byla to pro mě obrovská kreativní výzva i čest – možnost ukázat, že sportovní oblečení může mít nejen funkční, ale i estetickou a symbolickou rovinu",
+        "context": "o zakázce"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "curl (WebFetch returned 403)"
+  },
+  {
+    "url": "https://www.czechdesign.cz/tags/anezka-bereckova",
+    "outlet": "CzechDesign",
+    "title": "Anežka Berecková (tag page)",
+    "title_note": "Tag listing page; lists the article: Nevím, zda by Češi absenci trikolory ustáli. Designérka olympijské kolekce mluví o kompromisech, které musela udělat - 26. 12. 2025 - 9 min.",
+    "date": null,
+    "type": "profil",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "curl (WebFetch returned 403)"
+  },
+  {
+    "url": "https://www.sportin.art/cs/detail-clanku/olympiada-2026-jak-vypada-kolekce-ktera-pokazde-rozdeli-narod",
+    "outlet": "Sport in Art",
+    "title": "Olympiáda 2026: Jak vypadá kolekce, která pokaždé rozdělí národ?",
+    "date": "2025-11-20",
+    "date_note": "page: Publikováno 20.11.2025",
+    "type": "rozhovor",
+    "quotes": [
+      {
+        "text": "Navrhovat olympijskou kolekci je vždycky výzva, ale brala jsem to jako skvělou příležitost ukázat, že sportswear může mít nejen funkční, ale i estetickou a symbolickou rovinu.",
+        "context": "přijetí výzvy"
+      },
+      {
+        "text": "Jedním z cílů bylo posunout kolekci více do loungwear stylu, navodit atmosféru zimní dovolené na horách a propojit ikonické kousky s modernějším pojetím.",
+        "context": "cíl kolekce"
+      },
+      {
+        "text": "Za mě je to pestrobarevný svetr a péřový, vyhřívaný kabát. Tyto dva kousky se krásně doplňují, kdy svetr je na první pohled výrazný, signifikantní kousek, který je pro odvážnější",
+        "context": "na co je hrdá"
+      },
+      {
+        "text": "Určitě, šla bych do toho znovu, je to sice náročná práce, ale zároveň mě ohromně bavila. Byla to přínosná zkušenost.",
+        "context": "šla by znovu"
+      }
+    ],
+    "extra_quotes": [
+      {
+        "text": "Na kolekci jsme pracovali bezmála celý rok – od poloviny října, kdy jsme obdrželi olympijský motiv a předběžný inspirační směr, přes první návrhy a vývoj až po realizaci a následné představení finální kolekce veřejnosti.",
+        "context": "délka práce"
+      },
+      {
+        "text": "Přesně jak zmiňujete, jsou zde použity konkrétní neupravené tvary značek, kterými Vojtěch Preissig často zdobil a doplňoval vlastní písma, nebo je používal ve svých grafikách a malbách. Krásně to propojuje a charakterizuje jeho tvorbu a já jsem se toto snažila v kolekci uchopit vlastním způsobem.",
+        "context": "Preissigovy značky"
+      },
+      {
+        "text": "Určitě ten proces realizace byl v naší režii, omezení jsou pokaždé a na cenu se musí myslet vždycky, ale neřekla bych, že by šlo o nějaké zásadní omezení co se týká tvorby kolekce. Prostor pro zlepšení nebo širší rozvinutí kolekce je tu vždycky.",
+        "context": "omezení a cena"
+      },
+      {
+        "text": "Propojením světa módy a umění vzniká něco jedinečného a čeští malíři toho mají hodně co nabídnout.",
+        "context": "móda a umění"
+      },
+      {
+        "text": "Nejvíc mě zaujala kolekce Jana Černého pro Paříž – nejen proto, že se známe ze školy, ale hlavně kvůli tomu, jak posouvá povědomí i samotnou práci v oblasti fashion designu.",
+        "context": "oblíbená minulá kolekce"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch + curl"
+  },
+  {
+    "url": "https://denikn.cz/1955472/",
+    "outlet": "Deník N",
+    "title": "Přesné barvy vlajky nejsou nutné. Olympijská kolekce může dobře reprezentovat i bez nich, říká její návrhářka",
+    "date": "2026-01-30",
+    "date_note": "page: 30. ledna 2026 11:02",
+    "type": "rozhovor",
+    "paywalled": true,
+    "quotes": [
+      {
+        "text": "Aby oděv dobře reprezentoval zemi, není za každou cenu nutné mít na něm klasickou trikoloru,",
+        "context": "trikolora (perex, paywall)"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch (only perex visible; paywalled)"
+  },
+  {
+    "url": "https://www.dvtv.cz/videos/s-nemci-si-nas-nespletou-nemame-cernou-barvu-ale-tmave-modrou-na-kazdem-kolekce-lichotive-nevypada-rika-jeji-autorka",
+    "outlet": "DVTV",
+    "title": "S Němci si nás nespletou, nemáme černou barvu, ale tmavě modrou. Na každém kolekce lichotivě nevypadá, říká její autorka",
+    "date": null,
+    "type": "video",
+    "duration": "19m",
+    "host": "Martin Veselovský",
+    "quotes": [
+      {
+        "text": "Olympijská kolekce může i s nedokonalým odstínem trikolory dobře reprezentovat. V jiném nasvícení nebude tak tmavá. Žlutá má potom symbolizovat zlaté medaile. Trikolora v zadání vůbec nebyla,",
+        "context": "odstíny, zlatá"
+      },
+      {
+        "text": "Nebylo cílem, aby se kolekce líbila všem. Rozporuplné reakce se očekávaly. Je to lepší, než kdyby po tom neštěkl pes. Za zpětnou vazbu jsem ráda, konstruktivní kritika vás posune,",
+        "context": "reakce a kritika"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "chrome (WebFetch/curl returned only JS shell)"
+  },
+  {
+    "url": "https://tv.blesk.cz/video/9737634/epicentrum-anezka-bereckova.html",
+    "outlet": "Blesk",
+    "title": "Jak správně vynést olympijskou kolekci? Sportovci mají od návrhářky manuál",
+    "title_note": "Same video id 9737634 as the second Blesk URL; page shows this headline. Program: Epicentrum Blesku.",
+    "date": "2026-02-05",
+    "type": "video",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch (curl redirected to homepage)"
+  },
+  {
+    "url": "https://tv.blesk.cz/video/9737634/jak-spravne-vynest-olympijskou-kolekci-sportovci-maji-od-navrharky-manual.html",
+    "outlet": "Blesk",
+    "title": "Jak správně vynést olympijskou kolekci? Sportovci mají od návrhářky manuál",
+    "date": "2026-02-05",
+    "type": "video",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch"
+  },
+  {
+    "url": "https://vltava.rozhlas.cz/navrhovani-olympijske-kolekce-je-o-kompromisech-nase-odevy-jsou-hodne-barevne-a-9594018",
+    "outlet": "Vltava (Český rozhlas)",
+    "title": "Navrhování olympijské kolekce je o kompromisech, naše oděvy jsou hodně barevné a výstřední, říkají designérky",
+    "date": "2026-02-06",
+    "date_note": "WebFetch reported 6. únor 2026",
+    "type": "radio",
+    "authors": "Naděžda Hávová, František Šedivý",
+    "quotes": [
+      {
+        "text": "Nad sportovními, tedy funkčními oděvy člověk přemýšlí úplně jinak,",
+        "context": "funkční oděvy"
+      },
+      {
+        "text": "Nástupová část kolekce pro mě byla spíše kreativní. Zbytek oblečení, které sportovci nosí třeba ve volném čase, musí splňovat funkční podmínky,",
+        "context": "nástup vs. funkčnost"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch + curl"
+  },
+  {
+    "url": "https://www.e15.cz/byznys/obchod-a-sluzby/ceska-olympijska-kolekce-budi-emoce-sportovci-dostali-palcaky-na-snure-a-vytapeni-do-kabatu-1430396",
+    "outlet": "e15",
+    "title": "Česká olympijská kolekce budí emoce. Sportovci dostali palčáky na šňůře a vytápění do kabátu",
+    "date": "2026-02-07",
+    "date_note": "datePublished 2026-02-07T17:30:00+01:00",
+    "type": "clanek",
+    "quotes": [
+      {
+        "text": "Barevnost jsem vnímala hlavně optikou toho, co jednotlivým oděvům sluší,",
+        "context": "barevnost"
+      },
+      {
+        "text": "Tmavě modrá působí elegantněji a důstojněji než křiklavý odstín použitý v minulosti. Právě v tom vidím zajímavou změnu.",
+        "context": "tmavě modrá"
+      },
+      {
+        "text": "Jako dítě jsem přesně takové měla. A když někteří sportovci zmiňovali, že rukavice často ztrácejí, napadlo mě propojit je šňůrkou. Všichni je známe z dětství a zároveň je to opravdu praktické,",
+        "context": "palčáky na šňůrce"
+      },
+      {
+        "text": "Neděláme rekonstrukci ani kostým. Je tam jen nádech retra, který pracuje se současnými siluetami a trendy v odívání. Je to spojení historické inspirace a dnešního pohledu na módu,",
+        "context": "retro, ne kostým"
+      }
+    ],
+    "extra_quotes": [
+      {
+        "text": "Pro mě je to třeba tkaná tape (stuha),",
+        "context": "vlastní rukopis"
+      },
+      {
+        "text": "Je to drobný detail, který se objevuje na kabátu a následně i na botách. Hlavní motiv se pak opakuje také na podšívkách kabátů a batohů.",
+        "context": "detail tkané stuhy"
+      },
+      {
+        "text": "Takový kabát dává smysl hlavně na horách nebo ve chvílích, kdy člověk dlouho stojí či sedí,",
+        "context": "vyhřívaný kabát"
+      },
+      {
+        "text": "Na začátku vyjádřili přání, že chtějí mít teplákovou soupravu. Samotný design už pak byl na nás,",
+        "context": "přání sportovců"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch + curl"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=e-SjXK1latI",
+    "outlet": "YouTube (TWOFAR | Dominik Vesely)",
+    "title": "Anežka Berecková: Designérka české olympijské kolekce. #1",
+    "date": "2026-02-10",
+    "date_note": "uploadDate 2026-02-10T08:01:02-08:00",
+    "type": "video",
+    "description": "V rozhovoru mluvíme o tom, co znamená oblékat národ, jaký tlak přináší veřejné reakce a proč bez kontextu často vzniká nepochopení.\n\nDotýkáme se rozdílu mezi módou a uniformou, mezi názorem z gauče a realitou procesu, který trvá měsíce. O respektu, který někdy přichází dřív ze zahraničí než z domova. A také o tom, proč jsou sportovci vždy důležitější než samotná kolekce.",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "curl (WebFetch returned only footer)"
+  },
+  {
+    "url": "https://www.selectedmag.cz/styl/patecni-petka-designerka-odevu-anezka-bereckova-ve-vikendovem-dotazniku/",
+    "outlet": "Selected",
+    "title": "Páteční pětka / Designérka oděvu Anežka Berecková ve víkendovém dotazníku",
+    "date": "2026-02-14",
+    "date_note": "datePublished 2026-02-14T08:53:39+00:00",
+    "type": "rozhovor",
+    "quotes": [
+      {
+        "text": "Jsem v tom trochu punkáč, protože vaření, při kterém se člověk musí držet přesného receptu, mě docela stresuje. Raději vařím podle vlastních postupů a citu.",
+        "context": "vaření podle citu"
+      },
+      {
+        "text": "Asi nejvíc mě dokážou uklidnit moji sourozenci a kamarádi, za které jsem moc vděčná.",
+        "context": "klid v duši"
+      },
+      {
+        "text": "Takže jsem poprvé v životě držela v ruce váleček a natírala stěny!",
+        "context": "nový ateliér"
+      }
+    ],
+    "qa": [
+      {
+        "q": "Jaký nový produkt vám v poslední době udělal radost?",
+        "a": "Abych řekla pravdu, v poslední době mi největší radost udělal nový mentolový sprej do nosu. Už delší dobu mám ucpaný nos, takže mě potěšilo, když mi konečně uvolnil dutiny a mohla jsem zase normálně dýchat."
+      },
+      {
+        "q": "Jaké nejzajímavější jídlo umíte uvařit?",
+        "a": "Jsem velký fanoušek jídla, hlavně co se týče jeho konzumace. Moc ráda jím a obzvlášť si užívám dobré jídlo. Obecně se asi nedá říct, že bych vařila často, ale když už vařím, chci, aby to bylo výborné. Jsem v tom trochu punkáč, protože vaření, při kterém se člověk musí držet přesného receptu, mě docela stresuje. Raději vařím podle vlastních postupů a citu. Občas to má za následek ne úplně podařené jídlo. Neumím vařit jen pro jednoho nebo dva lidi. Jelikož pocházím z větší rodiny, mám trochu deformaci, že víc je prostě líp. Každopádně myslím, že docela dobře umím uvařit chicken tikka masalu."
+      },
+      {
+        "q": "Co vám přináší klid v duši?",
+        "a": "V poslední době je to hudba, především když si pustím Enyu. Její písně mají velmi harmonický charakter, což mě dokáže uklidnit a pomůže mi vyčistit si hlavu. Před spaním mám pak velmi ráda historický podcast Včera, dnes a zítra, který se věnuje různým obdobím a tématům světové historie, vždy s odborníkem na danou problematiku. Asi nejvíc mě dokážou uklidnit moji sourozenci a kamarádi, za které jsem moc vděčná."
+      },
+      {
+        "q": "Jakou činnost jste si nedávno osvojil a baví vás?",
+        "a": "Od ledna jsme se s kamarády rozhodli sestěhovat do nového ateliéru, který však potřeboval menší úpravy pro zútulnění. Mimo jiné bylo potřeba vymalovat stěny nabílo a obrousit parkety. Takže jsem poprvé v životě držela v ruce váleček a natírala stěny! Nevím, zda jsem si to osvojila natolik, abych to mohla považovat za osobní dovednost, ale moc mě to bavilo. Hlavně když jsem pak viděla ten rozdíl. Ano, měla jsem z toho velkou radost."
+      },
+      {
+        "q": "Který nedávno zhlédnutý film či seriál doporučujete na tento víkend?",
+        "a": "Pokud chcete vypnout a nechat se unášet naivitou romanticky laděného seriálu, u kterého nemusíte moc přemýšlet, doporučuji Bridgerton. Nezáleží na tom, kterou řadu si pustíte. Kostýmní i scénografická výprava je okouzlující ve všech čtyřech. Nedávno mě však mile překvapil film s názvem Cestující. Nemá příliš vysoké hodnocení, ale příběh mě vtáhl a byla to docela příjemná změna ve způsobu zpracování daného tématu. Nechci prozrazovat jakého."
+      }
+    ],
+    "bio_from_article": "Absolvovala Střední uměleckoprůmyslovou školu v Uherském Hradišti, kde získala pevné základy ve výtvarném myšlení, práci s materiálem a designu. Následně pokračovala v ateliéru Design oděvu na Univerzitě Tomáše Bati ve Zlíně, kde se zaměřila na oděvní tvorbu a dále rozvíjela své technické i konceptuální uvažování o módě. Před nástupem na pozici interní designérky ve značce Alpine Pro absolvovala stáž ve slovenské značce LULL Loungewear a u českého návrháře Jakuba Polanky. Ačkoliv už během studia prezentovala své autorské kolekce na Mercedes-Benz Prague Fashion Week i bratislavském Fashion Live!, širší pozornost se jí dostává právě teď jako spoluautorce nástupové olympijské kolekce pro český tým pro zimní olympijské hry v Miláně a Cortině d’Ampezzo.",
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch + curl"
+  },
+  {
+    "url": "https://www.ceskatelevize.cz/porady/1148499747-sama-doma/226562220600030/cast/1171414/",
+    "outlet": "Česká televize",
+    "title": "Olympijské kolekce - Anežka Berecková",
+    "title_note": "Segment of the show Sama doma; page title: Olympijské kolekce - Anežka Berecková - 24. února - Sama doma | Česká televize",
+    "date": "2026-02-24",
+    "date_note": "page shows 24. února; production year 2026",
+    "type": "video",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch + curl"
+  },
+  {
+    "url": "https://fmk.utb.cz/aktuality-akce/anezka-bereckova-zoh/",
+    "outlet": "FMK UTB",
+    "title": "Z FMK až na olympiádu: Anežka Berecková navrhla českou kolekci pro ZOH",
+    "date": "2026-02-16",
+    "date_note": "datePublished 2026-02-16T08:47:24+00:00",
+    "type": "clanek",
+    "quotes": [
+      {
+        "text": "Práce na zimní olympijské kolekci pro mě představovala především kreativní výzvu a příležitost nabídnout nový pohled na sportswear, a zároveň možnost prezentovat Českou republiku,",
+        "context": "kreativní výzva"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch + curl"
+  },
+  {
+    "url": "https://showcase.fmk.utb.cz/design-odevu/new-breath-ss_22/",
+    "outlet": "FMK UTB",
+    "title": "NEW BREATH SS_22",
+    "date": null,
+    "date_note": "page lists year 2020/2021",
+    "type": "profil",
+    "author": "Anežka Berecková",
+    "statement": "Období Rokoka nám definuje luxus, rozjařenost, frivolnost a marnivost francouzské buržoazie. 20.léta 20.st. charakterizují uvolněnou poválečnou atmosféru, kdy se čím dál více dostává ke slovu žena, vzdělaná žena. Následují 30. léta 20.st., ve kterých žena znovu začíná sázet na svou ženskost, čehož důkazem je hollywoodský glamour filmový svět. Kolekce NEW BREATH SS22 eklekticky propojuje moody jednotlivých dekád a odvážně je ladí se streetwearovými prvky. Vyjadřuje atmosféru večírků a volné zábavy, která nám v poslední době chyběla.",
+    "statement_en": "The Rococo period is defined by luxury, exhilaration, frivolity and vanity of the French bourgeoisie. 1920s are characterized by the relaxed post-war atmosphere, when a woman, an educated woman, gets more and more vocal. The 1930s followed and woman still draws from her femininity, as evidenced by the Hollywood glamor film world. The NEW BREATH SS22 collection eclectically connects the moods of individual decades and boldly harmonizes them with streetwear elements. It expresses the atmosphere of parties and free entertainment that we have been missing lately.",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch"
+  },
+  {
+    "url": "https://www.olympijskytym.cz/article/krasa-hor-a-italska-moda-inspirovaly-nastupovou-kolekci-pro-olympioniky-a-paralympioniky",
+    "outlet": "olympijskytym.cz",
+    "title": "Krása hor a italská móda inspirovaly nástupovou kolekci pro olympioniky a paralympioniky",
+    "date": "2025-11-12",
+    "author": "Barbora Žehanová",
+    "type": "clanek",
+    "quotes": [
+      {
+        "text": "Byla to pro mě obrovská kreativní výzva i čest – možnost ukázat, že sportovní oblečení může mít nejen funkční, ale i estetickou a symbolickou rovinu",
+        "context": "o zakázce"
+      },
+      {
+        "text": "Inspirace vychází z díla Vojtěcha Preissiga, průkopníka české grafiky, jehož osobitý styl a tvorba vlastního písma mě fascinují. Jeho odkaz jsme se snažili přenést do vizuální podoby kolekce a propojit ho s moderním pojetím sportovní módy. Výsledkem je kolekce s retro atmosférou, která připomíná estetiku zimních dovolených na horách, ale zároveň působí současně a svěže.",
+        "context": "inspirace Preissigem"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "curl (WebFetch returned 403)"
+  },
+  {
+    "url": "https://www.olympijskytym.cz/article/pet-ornamentu-na-olympijske-kolekci-pripomene-vyjimecneho-grafika-i-vykon-sportovce",
+    "outlet": "olympijskytym.cz",
+    "title": "Pět ornamentů na olympijské kolekci připomene výjimečného grafika i výkon sportovce",
+    "date": "2025-10-30",
+    "author": "Barbora Žehanová",
+    "type": "clanek",
+    "quotes": [],
+    "mention_of_anezka": "Na kolekci je přenesla Anežka Berecková, návrhářka ALPINE PRO.",
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "curl (WebFetch returned 403)"
+  },
+  {
+    "url": "https://www.olympijskytym.cz/article/ceska-nastupova-kolekce-opet-dobyla-svet-barvy-a-odvahu-chvali-vanity-fair-i-bbc",
+    "outlet": "olympijskytym.cz",
+    "title": "Česká nástupová kolekce opět dobyla svět. Barvy a odvahu chválí Vanity Fair i BBC",
+    "date": "2026-02-07",
+    "author": "Vendula Holková",
+    "type": "clanek",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": [
+      "Pletený svetr doplněný o čepici Raškovku, rukavice a ikonickou dlouhou šálu zařadili k nejpovedenějším módní časopis Vanity Fair, britská televize BBC a další řada médií.",
+      "Podle amerického měsíčníku Vanity Fair patřila česká výprava mezi pět nejlépe oblečených, a to společně s Brazílií, Mongolskem, USA a domácí Itálií.",
+      "„Čeští sportovci na sobě měli jeden z nejvýraznějších outfitů,“ zaznělo na webu britské televize BBC.",
+      "Deník USA Today označil kousky od Alpine Pro za nejvíc edgy. Jinými slovy šla podle nich návrhářka Anežka Berecková proti proudu a ocenili její odvahu experimentovat.",
+      "Vanity Fair zařadil naši kolekci mezi pět nejlepších z celého světa. USA Today zmínil dnes již tradiční raškovku a označil naši kolekci za nejvíc „edgy“, což mi přijde fajn i pro mladé publikum."
+    ],
+    "fetched": true,
+    "fetch_method": "curl (WebFetch returned 403)"
+  },
+  {
+    "url": "https://paralympic.cz/2025/11/krasa-hor-a-italska-moda-inspirovaly-nastupovou-kolekci-pro-olympioniky-a-paralympioniky/",
+    "outlet": "Paralympic.cz",
+    "title": "Krása hor a italská móda inspirovaly nástupovou kolekci pro paralympioniky a olympioniky",
+    "date": "2025-11-12",
+    "type": "clanek",
+    "quotes": [
+      {
+        "text": "Byla to pro mě obrovská kreativní výzva i čest – možnost ukázat, že sportovní oblečení může mít nejen funkční, ale i estetickou a symbolickou rovinu",
+        "context": "o zakázce"
+      },
+      {
+        "text": "Inspirace vychází z díla Vojtěcha Preissiga, průkopníka české grafiky, jehož osobitý styl a tvorba vlastního písma mě fascinují. Jeho odkaz jsme se snažili přenést do vizuální podoby kolekce a propojit ho s moderním pojetím sportovní módy. Výsledkem je kolekce s retro atmosférou, která připomíná estetiku zimních dovolených na horách, ale zároveň působí současně a svěže.",
+        "context": "inspirace Preissigem"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch"
+  },
+  {
+    "url": "https://sport.ceskatelevize.cz/clanek/ostatni/cesi-budou-na-olympiade-nosit-vyrazne-barvy-nastup-ve-svetru-a-nechybi-raskovka-153642",
+    "outlet": "ČT sport",
+    "title": "Češi budou na olympiádě nosit výrazné barvy. Nástup ve svetru a nechybí Raškovka",
+    "date": "2025-11-12",
+    "type": "clanek",
+    "quotes": [
+      {
+        "text": "Byla to pro mě obrovská kreativní výzva i čest – možnost ukázat, že sportovní oblečení může mít nejen funkční, ale i estetickou a symbolickou rovinu.",
+        "context": "o zakázce"
+      }
+    ],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch"
+  },
+  {
+    "url": "https://www.idnes.cz/oh/milan-cortina-2026/olympijska-kolekce-prezentace-milano-cortina.A251112_111030_sport_oh_ipet",
+    "outlet": "iDNES.cz",
+    "title": "Olympijská kolekce: Obměněná Raškovka i kraťasy a punčocháče",
+    "title_note": "Taken from the page <title> tag (Olympijská kolekce: Obměněná Raškovka i kraťasy a punčocháče - iDNES.cz). Article body sits behind a consent wall that was not clicked through.",
+    "date": "2025-11-12",
+    "date_note": "from URL A251112",
+    "type": "clanek",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_note": "partial: consent wall; only title available",
+    "fetch_method": "chrome (WebFetch blocked for this domain)"
+  },
+  {
+    "url": "https://isport.blesk.cz/clanek/468649",
+    "outlet": "iSport",
+    "title": "Tak vypadá česká olympijská kolekce: Kraťasy i svetry, sportovci vítají vyhrívanou bundu",
+    "date": "2025-11-12",
+    "date_note": "page: 12. listopadu 2025, 10:50",
+    "type": "clanek",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "WebFetch"
+  },
+  {
+    "url": "https://www.lidovky.cz/sport/zoh-2026-milan-cortina.A260204_081121_ln-sport_ljpl",
+    "outlet": "Lidovky.cz",
+    "title": "Olympiáda začíná, pořiďte si něco z české kolekce pro ZOH 2026",
+    "title_note": "page <title>: ZOH 2026: Kolik stojí česká olympijská kolekce? | Sport | Lidovky.cz",
+    "date": "2026-02-04",
+    "date_note": "page: 4. února 2026 8:49; URL A260204",
+    "author": "Matouš Waller",
+    "type": "clanek",
+    "quotes": [],
+    "mention_of_anezka": "Kolekci již podeváté ušila česká firma Alpine Pro, jejíž designérka Anežka Berecková stojí za finálními návrhy.",
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": true,
+    "fetch_method": "chrome (WebFetch blocked for this domain)"
+  },
+  {
+    "url": "https://www.seznamzpravy.cz/clanek/sport-olympiada-nastupova-kolekce-ceskych-olympioniku-patrila-podle-vanity-fair-k-nejlepsim-298382",
+    "outlet": "Seznam Zprávy",
+    "title": "Nástupová kolekce českých olympioniků patřila podle Vanity Fair k nejlepším",
+    "date": "2026-02-07",
+    "date_note": "page: 7. 2. 2026 10:14",
+    "type": "clanek",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": [
+      "Server módního časopisu Vanity Fair zařadil kolekci návrhářky Anežky Bereckové mezi pět nejlepších spolu s brazilskou, mongolskou, americkou a italskou.",
+      "Za jednu z nejpoutavějších označila českou kolekci BBC."
+    ],
+    "fetched": true,
+    "fetch_method": "WebFetch"
+  },
+  {
+    "url": "https://www.linkedin.com/",
+    "outlet": "LinkedIn",
+    "title": null,
+    "date": null,
+    "type": "profil",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": false,
+    "error": "skipped per instructions (profile link only)"
+  },
+  {
+    "url": "https://www.instagram.com/",
+    "outlet": "Instagram",
+    "title": null,
+    "date": null,
+    "type": "profil",
+    "quotes": [],
+    "mentions_vanity_fair_or_bbc": null,
+    "fetched": false,
+    "error": "skipped per instructions (profile link only)"
+  }
+]

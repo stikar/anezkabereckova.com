@@ -27,17 +27,23 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with Next.js
+      # prebuild = generate (ikony, OG, PDF, launch kit, press kit) z public/images,
+      # postbuild = sitemap + service worker nad out/. sources/ není potřeba.
+      - name: Build (generate + next build + sitemap/sw)
         run: npm run build
-        env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ vars.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+
+      - name: Verify build output
+        run: |
+          for f in out/index.html out/projekty/index.html out/en/index.html out/sw.js out/sitemap.xml out/og/cs/home.jpg out/pdf/cv-cs.pdf; do
+            [ -f "$f" ] || { echo "Missing $f"; exit 1; }
+          done
+          echo "Build output verified"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

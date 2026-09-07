@@ -1,0 +1,486 @@
+{
+  "manifest": {
+    "cs": "Věřím, že dobrý design by měl fungovat nejen vizuálně, ale také v pohybu a každodenním životě.",
+    "en": "I believe good design should work not only visually, but also in motion and in everyday life."
+  },
+  "intro": {
+    "heading": {
+      "cs": "Jmenuji se Anežka Berecková",
+      "en": "My name is Anežka Berecková"
+    },
+    "p": {
+      "cs": [
+        "Jsem česká módní designérka a oděvní návrhářka. Ve své tvorbě propojuji módu, sportswear, funkčnost a současný vizuální design.",
+        "Zajímá mě celý proces vzniku oděvu, od prvního konceptu a hledání inspirace přes práci s materiálem, barvami a siluetou až po výsledný produkt. Věřím, že dobrý design by měl fungovat nejen vizuálně, ale také v pohybu a každodenním životě.",
+        "Aktuálně působím jako designérka ve společnosti Alpine Pro. Jedním z mých nejvýznamnějších projektů je návrh oděvní části oficiální kolekce Českého olympijského týmu pro zimní olympijské hry Milano Cortina 2026."
+      ],
+      "en": [
+        "I am a Czech fashion and apparel designer. In my work I bring together fashion, sportswear, function and contemporary visual design.",
+        "I am interested in the whole process of making a garment, from the first concept and search for inspiration, through working with material, colour and silhouette, to the final product. I believe good design should work not only visually, but also in motion and in everyday life.",
+        "I currently work as a designer at Alpine Pro. One of my most significant projects is the apparel design of the official Czech Olympic team collection for the Milano Cortina 2026 Winter Olympic Games."
+      ]
+    }
+  },
+  "about": {
+    "heading": {
+      "cs": "O mně",
+      "en": "About me"
+    },
+    "p": {
+      "cs": [
+        "Móda pro mě není pouze o výsledném vzhledu oděvu. Zajímá mě především příběh, který za ním stojí, práce s proporcemi, materiálem, detailem a způsob, jakým může design reagovat na prostředí, funkci i člověka, který jej nosí.",
+        "Vystudovala jsem magisterský obor Design oděvu na Univerzitě Tomáše Bati ve Zlíně, kde jsem rozvíjela svůj přístup k autorské módní tvorbě, konstrukci oděvu a práci s vizuálním konceptem.",
+        "Už během studia jsem měla možnost prezentovat své autorské kolekce na významných módních událostech v České republice i na Slovensku, včetně Mercedes-Benz Prague Fashion Week a Fashion LIVE! Bratislava.",
+        "Součástí mé profesní cesty byly také zkušenosti z prostředí české a slovenské módní scény. Před nástupem do Alpine Pro jsem absolvovala stáž u českého módního návrháře Jakuba Polanky a ve slovenské značce LULL Loungewear.",
+        "Dnes se ve své práci věnuji především oděvnímu designu, sportswearu a projektům, ve kterých se potkává kreativní koncept s funkčností a reálnými požadavky na výsledný produkt."
+      ],
+      "en": [
+        "For me, fashion is not only about how a garment ends up looking. What interests me most is the story behind it, the work with proportion, material and detail, and the way design can respond to its environment, its function and the person who wears it.",
+        "I graduated with a master's degree in Fashion Design from Tomas Bata University in Zlín, where I developed my approach to authorial fashion, garment construction and working with a visual concept.",
+        "Already during my studies I had the opportunity to present my collections at major fashion events in the Czech Republic and Slovakia, including Mercedes-Benz Prague Fashion Week and Fashion LIVE! Bratislava.",
+        "My professional path also includes experience from the Czech and Slovak fashion scene. Before joining Alpine Pro I interned with Czech fashion designer Jakub Polanka and at the Slovak brand LULL Loungewear.",
+        "Today my work focuses mainly on apparel design, sportswear and projects where a creative concept meets function and the real demands of the final product."
+      ]
+    }
+  },
+  "milano": {
+    "heading": {
+      "cs": "Milano Cortina 2026",
+      "en": "Milano Cortina 2026"
+    },
+    "subheading": {
+      "cs": "Olympijská kolekce pro Český olympijský tým",
+      "en": "Olympic collection for the Czech Olympic team"
+    },
+    "p": {
+      "cs": [
+        "Jedním z největších projektů mé dosavadní kariéry je oficiální kolekce Českého olympijského týmu pro zimní olympijské hry Milano Cortina 2026.",
+        "Jako designérka Alpine Pro jsem navrhla oděvní část kolekce určené českým olympionikům. Součástí projektu byla jak kolekce pro sportovce, tak návrh oblečení pro slavnostní nástup české výpravy.",
+        "Cílem bylo vytvořit současnou podobu českého sportswearu, která spojuje funkčnost, pohodlí, výraznou vizuální identitu a odkazy na českou kulturu.",
+        "Vizuální motiv kolekce vychází z tvorby významného českého grafika a typografa Vojtěcha Preissiga. Jeho charakteristické ornamenty zpracoval Milan Jaroš a následně byly přeneseny do jednotlivých částí olympijské kolekce.",
+        "Při návrhu jsem hledala způsob, jak propojit sportovní funkčnost s estetikou, která nebude působit pouze jako klasické sportovní oblečení. Kolekce proto pracuje také s prvky loungewearu, retro estetikou a atmosférou zimního pobytu v horách.",
+        "Výsledkem je kolekce, která reprezentuje Českou republiku nejen prostřednictvím barev nebo symbolů, ale také prostřednictvím odkazu na český grafický design a jeho historii.",
+        "Na projektu jsem spolupracovala s Alpine Pro, Českým olympijským výborem, Milanem Jarošem a designérkou obuvi a doplňků Terezií Horňákovou."
+      ],
+      "en": [
+        "One of the biggest projects of my career so far is the official collection of the Czech Olympic team for the Milano Cortina 2026 Winter Olympic Games.",
+        "As a designer at Alpine Pro I designed the apparel part of the collection for Czech Olympians. The project included both the collection for the athletes and the outfits for the ceremonial entrance of the Czech delegation.",
+        "The goal was to create a contemporary form of Czech sportswear that combines function, comfort, a strong visual identity and references to Czech culture.",
+        "The visual motif of the collection draws on the work of the prominent Czech graphic designer and typographer Vojtěch Preissig. His characteristic ornaments were reworked by Milan Jaroš and then transferred to the individual pieces of the Olympic collection.",
+        "While designing, I looked for a way to connect sports function with an aesthetic that would not feel like classic sportswear only. The collection therefore also works with loungewear elements, a retro aesthetic and the atmosphere of a winter stay in the mountains.",
+        "The result is a collection that represents the Czech Republic not only through colours or symbols, but also through a reference to Czech graphic design and its history.",
+        "On the project I collaborated with Alpine Pro, the Czech Olympic Committee, Milan Jaroš and footwear and accessories designer Terezie Horňáková."
+      ]
+    },
+    "process": {
+      "cs": [
+        "Práce na zimní olympijské kolekci pro mě představovala především kreativní výzvu a příležitost nabídnout nový pohled na sportswear, a zároveň možnost prezentovat Českou republiku.",
+        "Kolekce vznikla ve spolupráci s Českým olympijským výborem a Milanem Jarošem, hlavním grafikem olympijského motivu.",
+        "Inspirace vychází z díla světově uznávaného průkopníka české grafiky Vojtěcha Preissiga, který sice velkou část života strávil v zahraničí, ale vždy zůstal silným českým vlastencem. Jeho osobitý výtvarný styl a přístup k tvorbě písma se staly hlavním zdrojem vizuální podoby olympijského motivu, se kterým jsem následně v kolekci pracovala.",
+        "Na začátku jsem vytvořila několik návrhů a konceptů, jak tento motiv přirozeně začlenit do jednotlivých oděvů. Prvotní myšlenkou bylo postavit kolekci na výrazném oversize svetru v kombinaci s dlouhou huňatou šálou a dlouhým péřovým kabátem.",
+        "Postupně se k těmto základním prvkům přidávaly další části, například pletené punčochy, kraťasy nebo palčáky na šňůrce. V průběhu návrhového procesu se všechny tyto prvky postupně propojily do finální podoby kolekce.",
+        "Výsledkem je kolekce laděná do lehce retro stylu, která propojuje současný oděvní design s estetikou zimní dovolené na horách."
+      ],
+      "en": [
+        "Working on the Winter Olympic collection was above all a creative challenge for me, an opportunity to offer a new perspective on sportswear and, at the same time, a chance to represent the Czech Republic.",
+        "The collection was created in collaboration with the Czech Olympic Committee and Milan Jaroš, the lead graphic designer of the Olympic motif.",
+        "The inspiration comes from the work of Vojtěch Preissig, a world-renowned pioneer of Czech graphic design who spent a large part of his life abroad yet always remained a strong Czech patriot. His distinctive artistic style and approach to type design became the main source of the visual form of the Olympic motif, which I then worked with in the collection.",
+        "At the beginning I created several designs and concepts of how to integrate this motif naturally into the individual garments. The initial idea was to build the collection on a bold oversize sweater combined with a long shaggy scarf and a long down coat.",
+        "Further pieces were gradually added to these basic elements, such as knitted tights, shorts or mittens on a string. Over the course of the design process all these elements gradually came together into the final form of the collection.",
+        "The result is a collection with a slightly retro feel that connects contemporary apparel design with the aesthetic of a winter holiday in the mountains."
+      ],
+      "processSentence": {
+        "cs": "Prvotní myšlenka při skladbě kolekce byla vytvořit hutný oversize svetr společně s dlouhou huňatou šálou, to celé doplněno o dlouhý péřový kabát. Postupně se pak nabalovaly další kousky jako jsou pletené punčochy, kraťase a palčáky na šňůrku.",
+        "en": "The initial idea in composing the collection was to create a dense oversize sweater together with a long shaggy scarf, all completed by a long down coat. Other pieces then gradually piled on, such as knitted tights, shorts and mittens on a string."
+      }
+    },
+    "pieces": {
+      "items": [
+        {
+          "cs": "hutný oversize svetr",
+          "en": "dense oversize sweater",
+          "photo": "look-02"
+        },
+        {
+          "cs": "dlouhá huňatá šála",
+          "en": "long shaggy scarf",
+          "photo": "look-03"
+        },
+        {
+          "cs": "dlouhý péřový kabát",
+          "en": "long down coat",
+          "photo": "look-10"
+        },
+        {
+          "cs": "pletené punčochy",
+          "en": "knitted tights",
+          "photo": "look-11"
+        },
+        {
+          "cs": "kraťasy",
+          "en": "shorts",
+          "photo": "look-01"
+        },
+        {
+          "cs": "palčáky na šňůrku",
+          "en": "mittens on a string",
+          "photo": null
+        }
+      ]
+    },
+    "anatomy": {
+      "photo": "look-01",
+      "spots": [
+        {
+          "x": 40,
+          "y": 38,
+          "cs": "hutný oversize svetr s Preissigovým ornamentem",
+          "en": "dense oversize sweater with Preissig's ornament"
+        },
+        {
+          "x": 24,
+          "y": 66,
+          "cs": "dlouhá huňatá šála",
+          "en": "long shaggy scarf"
+        },
+        {
+          "x": 52,
+          "y": 64,
+          "cs": "kraťasy",
+          "en": "shorts"
+        },
+        {
+          "x": 70,
+          "y": 68,
+          "cs": "pletené punčochy",
+          "en": "knitted tights"
+        }
+      ],
+      "coatSpot": {
+        "photo": "look-10",
+        "x": 44,
+        "y": 45,
+        "cs": "dlouhý péřový kabát",
+        "en": "long down coat"
+      }
+    },
+    "preissig": {
+      "steps": [
+        {
+          "n": "01",
+          "title": {
+            "cs": "Vojtěch Preissig",
+            "en": "Vojtěch Preissig"
+          },
+          "cs": "Světově uznávaný průkopník české grafiky, který sice velkou část života strávil v zahraničí, ale vždy zůstal silným českým vlastencem. Jeho osobitý výtvarný styl a přístup k tvorbě písma se staly hlavním zdrojem vizuální podoby olympijského motivu.",
+          "en": "A world-renowned pioneer of Czech graphic design who spent a large part of his life abroad yet always remained a strong Czech patriot. His distinctive artistic style and approach to type design became the main source of the visual form of the Olympic motif."
+        },
+        {
+          "n": "02",
+          "title": {
+            "cs": "Milan Jaroš",
+            "en": "Milan Jaroš"
+          },
+          "cs": "Jeho charakteristické ornamenty zpracoval Milan Jaroš a následně byly přeneseny do jednotlivých částí olympijské kolekce.",
+          "en": "His characteristic ornaments were reworked by Milan Jaroš and then transferred to the individual pieces of the Olympic collection."
+        },
+        {
+          "n": "03",
+          "title": {
+            "cs": "Kolekce",
+            "en": "The collection"
+          },
+          "photo": "look-02",
+          "cs": "Ornament na oděvu.",
+          "en": "The ornament on the garment."
+        }
+      ]
+    }
+  },
+  "shows": {
+    "heading": {
+      "cs": "Fashion Shows",
+      "en": "Fashion Shows"
+    },
+    "subheading": {
+      "cs": "Moje kolekce na módních přehlídkách",
+      "en": "My collections on the runway"
+    },
+    "intro": {
+      "cs": [
+        "Autorská tvorba a módní přehlídky byly důležitou součástí mého profesního vývoje už během studia.",
+        "Své kolekce jsem představila na módních událostech v České republice i zahraničí."
+      ],
+      "en": [
+        "Authorial work and fashion shows were an important part of my professional development already during my studies.",
+        "I have presented my collections at fashion events in the Czech Republic and abroad."
+      ]
+    },
+    "mbpfw": {
+      "cs": [
+        "Na Mercedes-Benz Prague Fashion Week jsem prezentovala svou tvorbu v rámci Ateliéru Design oděvu Univerzity Tomáše Bati ve Zlíně.",
+        "V roce 2019 jsem byla součástí prezentace UTB na Mercedes-Benz Prague Fashion Week FW19.",
+        "V rámci Mercedes-Benz Prague Fashion Week SS22 jsem následně představila autorskou kolekci NEW BREATH SS22."
+      ],
+      "en": [
+        "At Mercedes-Benz Prague Fashion Week I presented my work as part of the Fashion Design Studio of Tomas Bata University in Zlín.",
+        "In 2019 I was part of the TBU presentation at Mercedes-Benz Prague Fashion Week FW19.",
+        "At Mercedes-Benz Prague Fashion Week SS22 I then presented my collection NEW BREATH SS22."
+      ]
+    },
+    "fashionLive": {
+      "cs": "Svou autorskou tvorbu jsem prezentovala také na Fashion LIVE! v Bratislavě, jedné z významných módních událostí na Slovensku.",
+      "en": "I also presented my work at Fashion LIVE! in Bratislava, one of the major fashion events in Slovakia."
+    },
+    "wereNext": {
+      "cs": "Moje tvorba byla součástí také módního projektu WE’RE NEXT, který propojuje nastupující módní designéry, studenty a mladé talenty z české i zahraniční módní scény.",
+      "en": "My work was also part of the fashion project WE’RE NEXT, which brings together emerging fashion designers, students and young talents from the Czech and international fashion scene."
+    }
+  },
+  "work": {
+    "heading": {
+      "cs": "Moje tvorba",
+      "en": "My work"
+    },
+    "p": {
+      "cs": [
+        "Ve své práci se pohybuji na pomezí fashion designu, sportswearu a současného oděvního designu.",
+        "Nevnímám jednotlivé projekty pouze jako návrh konkrétního kusu oblečení. Každý z nich pro mě začíná hledáním tématu, atmosféry a vizuálního směru.",
+        "Následuje práce s materiály, konstrukcí, proporcemi, barevností a detaily, které společně vytvářejí výslednou identitu kolekce.",
+        "Blízké je mi propojování módního designu s funkčním oblečením. Zajímá mě, jak lze principy sportswearu posouvat směrem k současné módě a zároveň zachovat komfort a praktické využití oděvu."
+      ],
+      "en": [
+        "In my work I move on the boundary between fashion design, sportswear and contemporary apparel design.",
+        "I do not see individual projects merely as the design of a specific piece of clothing. Each of them begins for me with a search for a theme, an atmosphere and a visual direction.",
+        "This is followed by work with materials, construction, proportion, colour and details, which together create the final identity of the collection.",
+        "I am drawn to connecting fashion design with functional clothing. I am interested in how the principles of sportswear can be pushed towards contemporary fashion while keeping the comfort and practical use of the garment."
+      ]
+    }
+  },
+  "selectedProjects": {
+    "heading": {
+      "cs": "Vybrané projekty",
+      "en": "Selected projects"
+    }
+  },
+  "authorCollections": {
+    "heading": {
+      "cs": "Autorské kolekce",
+      "en": "Authorial collections"
+    },
+    "cs": "Výběr dalších autorských kolekcí, módních projektů a experimentů s materiálem, konstrukcí, siluetou a vizuální identitou.",
+    "en": "A selection of further authorial collections, fashion projects and experiments with material, construction, silhouette and visual identity."
+  },
+  "howIWork": {
+    "heading": {
+      "cs": "Jak pracuji",
+      "en": "How I work"
+    },
+    "intro": {
+      "cs": "Každý projekt je pro mě kombinací kreativity a hledání funkčního řešení.",
+      "en": "Every project is for me a combination of creativity and the search for a functional solution."
+    },
+    "p": {
+      "cs": [
+        "Začínám rešerší a definováním hlavní myšlenky projektu. Následuje práce s vizuálními referencemi, materiály, barevností, siluetami a prvními návrhy.",
+        "Důležitá je pro mě také samotná realizace. Design musí fungovat nejen na skice nebo fotografii, ale především jako skutečný oděv.",
+        "Právě propojení kreativního konceptu, detailu, funkčnosti a výsledného produktu je oblast, která mě na fashion designu baví nejvíce."
+      ],
+      "en": [
+        "I start with research and defining the main idea of the project. This is followed by work with visual references, materials, colour, silhouettes and first designs.",
+        "The realisation itself is also important to me. Design has to work not only on a sketch or in a photograph, but above all as a real garment.",
+        "It is precisely the connection of creative concept, detail, function and the final product that I enjoy most about fashion design."
+      ]
+    },
+    "steps": {
+      "items": [
+        {
+          "n": "01",
+          "cs": "Rešerše a hlavní myšlenka",
+          "en": "Research and the main idea",
+          "photo": "milano-cortina-2026/motion-01"
+        },
+        {
+          "n": "02",
+          "cs": "Vizuální reference, materiály, barevnost, siluety",
+          "en": "Visual references, materials, colour, silhouettes",
+          "photo": "poisoned-mind/detail-02"
+        },
+        {
+          "n": "03",
+          "cs": "První návrhy",
+          "en": "First designs",
+          "photo": "princess-fw19/look-10"
+        },
+        {
+          "n": "04",
+          "cs": "Realizace",
+          "en": "Realisation",
+          "photo": "milano-cortina-2026/look-01"
+        }
+      ]
+    }
+  },
+  "collaboration": {
+    "heading": {
+      "cs": "Spolupráce",
+      "en": "Collaboration"
+    },
+    "p": {
+      "cs": [
+        "Ráda se zapojuji do zajímavých projektů v oblasti módy, oděvního designu, sportswearu a kreativního vývoje produktů.",
+        "Jsem otevřená spolupráci se značkami, institucemi, kreativními studii, fotografy a dalšími designéry.",
+        "Pokud připravujete projekt, na kterém bychom mohli spolupracovat, ozvěte se mi."
+      ],
+      "en": [
+        "I enjoy taking part in interesting projects in fashion, apparel design, sportswear and creative product development.",
+        "I am open to collaborating with brands, institutions, creative studios, photographers and other designers.",
+        "If you are preparing a project we could work on together, get in touch."
+      ]
+    }
+  },
+  "contact": {
+    "heading": {
+      "cs": "Kontakt",
+      "en": "Contact"
+    },
+    "cta": {
+      "cs": "Pojďme vytvořit něco společně",
+      "en": "Let's create something together"
+    },
+    "p": {
+      "cs": [
+        "Máte zájem o spolupráci, módní projekt, návrh kolekce nebo jiný kreativní projekt?",
+        "Napište mi."
+      ],
+      "en": [
+        "Interested in a collaboration, a fashion project, a collection design or another creative project?",
+        "Write to me."
+      ]
+    }
+  },
+  "bio": {
+    "long": {
+      "cs": "Anežka Berecková je česká módní designérka a absolventka Designu oděvu na Univerzitě Tomáše Bati ve Zlíně. Působí jako oděvní designérka ve společnosti Alpine Pro a je autorkou oděvní části oficiální kolekce Českého olympijského týmu pro zimní olympijské hry Milano Cortina 2026. Ve své tvorbě se zaměřuje především na fashion design, sportswear, funkční oděv a propojování současné módy s praktickým využitím. Své autorské kolekce prezentovala mimo jiné na Mercedes-Benz Prague Fashion Week a Fashion LIVE! Bratislava.",
+      "en": "Anežka Berecková is a Czech fashion designer and a graduate of Fashion Design at Tomas Bata University in Zlín. She works as an apparel designer at Alpine Pro and is the author of the apparel part of the official Czech Olympic team collection for the Milano Cortina 2026 Winter Olympic Games. Her work focuses primarily on fashion design, sportswear, functional clothing and connecting contemporary fashion with practical use. She has presented her collections at Mercedes-Benz Prague Fashion Week and Fashion LIVE! Bratislava, among others."
+    },
+    "medium": {
+      "cs": "Anežka Berecková je česká módní designérka a absolventka Designu oděvu na Univerzitě Tomáše Bati ve Zlíně. Působí jako oděvní designérka ve společnosti Alpine Pro a je autorkou oděvní části oficiální kolekce Českého olympijského týmu pro zimní olympijské hry Milano Cortina 2026. Ve své tvorbě se zaměřuje především na fashion design, sportswear, funkční oděv a propojování současné módy s praktickým využitím.",
+      "en": "Anežka Berecková is a Czech fashion designer and a graduate of Fashion Design at Tomas Bata University in Zlín. She works as an apparel designer at Alpine Pro and is the author of the apparel part of the official Czech Olympic team collection for the Milano Cortina 2026 Winter Olympic Games. Her work focuses primarily on fashion design, sportswear, functional clothing and connecting contemporary fashion with practical use."
+    },
+    "short": {
+      "cs": "Anežka Berecková je česká módní designérka. Působí jako oděvní designérka ve společnosti Alpine Pro a je autorkou oděvní části oficiální kolekce Českého olympijského týmu pro zimní olympijské hry Milano Cortina 2026.",
+      "en": "Anežka Berecková is a Czech fashion designer. She works as an apparel designer at Alpine Pro and is the author of the apparel part of the official Czech Olympic team collection for the Milano Cortina 2026 Winter Olympic Games."
+    }
+  },
+  "poisonedMind": {
+    "cs": "Všechno je jen v naší mysli, která je sama o sobě neomezená a tím pádem nejvíce zranitelná. Ve své kolekci se zabývám náhledem do mysli jedince postiženého sociálními poruchami. Stav jeho mysli, úzkosti, deprese, trápení, strach... všechno to, co se odehrává v jeho hlavě, se snažím oděvně ztvárnit touto kolekcí, která vyjadřuje můj osobitý pohled na toto téma. Používám prvky dekonstrukce, jako je drásání a trhání materiálu, které nejlépe vyjadřují úzkostný stav člověka zasaženého nemocí. Zároveň se nechávám inspirovat sémantikou svěrací kazajky, kterou transformuji do střihů jednotlivých outfitů.",
+    "en": "Everything is just in our minds. The mind itself is unlimited but also the most open to harm. In my collection I have focused on a mind poisoned by social disorder. The state of such a mind, anxiety, depression, suffering, fear... all that happens in the mind of the affected individual I have externalised through the clothes of my collection, which express my personal view on the matter. I use components of deconstruction, such as cracking and tearing of materials, which properly express the anxious state of a person attacked by illness. At the same time I let myself be inspired by the semantics of the straitjacket, which I transformed into the patterns of the individual outfits."
+  },
+  "newBreath": {
+    "cs": [
+      "Autorská módní kolekce prezentovaná na Mercedes-Benz Prague Fashion Week SS22.",
+      "Kolekce vznikla během studia Designu oděvu na Univerzitě Tomáše Bati ve Zlíně a představuje jednu z etap mé autorské tvorby a hledání vlastního přístupu k současnému oděvnímu designu."
+    ],
+    "en": [
+      "An authorial fashion collection presented at Mercedes-Benz Prague Fashion Week SS22.",
+      "The collection was created during my Fashion Design studies at Tomas Bata University in Zlín and represents one of the stages of my authorial work and the search for my own approach to contemporary apparel design."
+    ],
+    "statement": {
+      "source": "https://showcase.fmk.utb.cz/design-odevu/new-breath-ss_22/",
+      "sourceLabel": "showcase.fmk.utb.cz",
+      "cs": "Období Rokoka nám definuje luxus, rozjařenost, frivolnost a marnivost francouzské buržoazie. 20.léta 20.st. charakterizují uvolněnou poválečnou atmosféru, kdy se čím dál více dostává ke slovu žena, vzdělaná žena. Následují 30. léta 20.st., ve kterých žena znovu začíná sázet na svou ženskost, čehož důkazem je hollywoodský glamour filmový svět. Kolekce NEW BREATH SS22 eklekticky propojuje moody jednotlivých dekád a odvážně je ladí se streetwearovými prvky. Vyjadřuje atmosféru večírků a volné zábavy, která nám v poslední době chyběla.",
+      "en": "The Rococo period defines for us the luxury, exuberance, frivolity and vanity of the French bourgeoisie. The 1920s are characterised by a relaxed post-war atmosphere in which the woman, the educated woman, increasingly has her say. Then come the 1930s, in which the woman again begins to bet on her femininity, as evidenced by the glamorous world of Hollywood film. The NEW BREATH SS22 collection eclectically connects the moods of the individual decades and boldly tunes them with streetwear elements. It expresses the atmosphere of parties and carefree fun that we have been missing lately."
+    }
+  },
+  "princess": {
+    "cs": [
+      "Na Mercedes-Benz Prague Fashion Week jsem prezentovala svou tvorbu v rámci Ateliéru Design oděvu Univerzity Tomáše Bati ve Zlíně. V roce 2019 jsem byla součástí prezentace UTB na Mercedes-Benz Prague Fashion Week FW19.",
+      "Nevnímám jednotlivé projekty pouze jako návrh konkrétního kusu oblečení. Každý z nich pro mě začíná hledáním tématu, atmosféry a vizuálního směru. Následuje práce s materiály, konstrukcí, proporcemi, barevností a detaily, které společně vytvářejí výslednou identitu kolekce."
+    ],
+    "en": [
+      "At Mercedes-Benz Prague Fashion Week I presented my work as part of the Fashion Design Studio of Tomas Bata University in Zlín. In 2019 I was part of the TBU presentation at Mercedes-Benz Prague Fashion Week FW19.",
+      "I do not see individual projects merely as the design of a specific piece of clothing. Each of them begins for me with a search for a theme, an atmosphere and a visual direction. This is followed by work with materials, construction, proportion, colour and details, which together create the final identity of the collection."
+    ]
+  },
+  "timeline": {
+    "items": [
+      {
+        "year": "",
+        "cs": "UTB Zlín · Design oděvu",
+        "en": "TBU Zlín · Fashion Design"
+      },
+      {
+        "year": "2019",
+        "cs": "MBPFW FW19 · PRINCESS (prezentace UTB)",
+        "en": "MBPFW FW19 · PRINCESS (TBU presentation)",
+        "href": "/projekty/princess-fw19"
+      },
+      {
+        "year": "",
+        "cs": "Fashion LIVE! Bratislava",
+        "en": "Fashion LIVE! Bratislava"
+      },
+      {
+        "year": "",
+        "cs": "WE’RE NEXT",
+        "en": "WE’RE NEXT"
+      },
+      {
+        "year": "",
+        "cs": "stáž · Jakub Polanka",
+        "en": "internship · Jakub Polanka"
+      },
+      {
+        "year": "",
+        "cs": "stáž · LULL Loungewear",
+        "en": "internship · LULL Loungewear"
+      },
+      {
+        "year": "",
+        "cs": "MBPFW SS22 · NEW BREATH (diplomová kolekce)",
+        "en": "MBPFW SS22 · NEW BREATH (master's collection)",
+        "href": "/projekty/new-breath-ss22"
+      },
+      {
+        "year": "",
+        "cs": "Alpine Pro · designérka",
+        "en": "Alpine Pro · designer"
+      },
+      {
+        "year": "2025–2026",
+        "cs": "Milano Cortina 2026 · olympijská kolekce",
+        "en": "Milano Cortina 2026 · Olympic collection",
+        "href": "/projekty/milano-cortina-2026"
+      }
+    ]
+  },
+  "inHerWords": {
+    "items": [
+      {
+        "cs": "Věnuji se tomu celý svůj život.",
+        "en": "I have devoted my whole life to it.",
+        "source": "iROZHLAS",
+        "href": "https://www.irozhlas.cz/sport/olympijske-hry/alpine-pro-ceska-zimni-olympijska-kolekce-2026-obleceni-zoh-navrharka_2511141300_ako"
+      },
+      {
+        "cs": "Nad sportovními, tedy funkčními oděvy člověk přemýšlí úplně jinak.",
+        "en": "You think about sports clothing, that is functional clothing, in a completely different way.",
+        "source": "Vltava, Český rozhlas",
+        "href": "https://vltava.rozhlas.cz/navrhovani-olympijske-kolekce-je-o-kompromisech-nase-odevy-jsou-hodne-barevne-a-9594018"
+      },
+      {
+        "cs": "Nebylo cílem, aby se kolekce líbila všem. Rozporuplné reakce se očekávaly. Je to lepší, než kdyby po tom neštěkl pes. Za zpětnou vazbu jsem ráda, konstruktivní kritika vás posune.",
+        "en": "The goal was not for the collection to please everyone. Mixed reactions were expected. It is better than if nobody cared at all. I am glad for the feedback, constructive criticism moves you forward.",
+        "source": "DVTV",
+        "href": "https://www.dvtv.cz/videos/s-nemci-si-nas-nespletou-nemame-cernou-barvu-ale-tmave-modrou-na-kazdem-kolekce-lichotive-nevypada-rika-jeji-autorka"
+      },
+      {
+        "cs": "Jsem v tom trochu punkáč, protože vaření, při kterém se člověk musí držet přesného receptu, mě docela stresuje. Raději vařím podle vlastních postupů a citu.",
+        "en": "I am a bit of a punk about it, because cooking where you have to stick to an exact recipe rather stresses me out. I prefer to cook by my own methods and by feel.",
+        "source": "Selected, Páteční pětka",
+        "href": "https://www.selectedmag.cz/styl/patecni-petka-designerka-odevu-anezka-bereckova-ve-vikendovem-dotazniku/"
+      }
+    ]
+  }
+}
