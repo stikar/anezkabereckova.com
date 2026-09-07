@@ -1,0 +1,575 @@
+{
+  "projects": [
+    {
+      "slug": "milano-cortina-2026",
+      "enSlug": "milano-cortina-2026",
+      "code": "WOG26",
+      "title": "Milano Cortina 2026",
+      "subtitle": {
+        "cs": "Olympijská kolekce pro Český olympijský tým",
+        "en": "Olympic collection for the Czech Olympic team"
+      },
+      "group": "selected",
+      "year": "2025–2026",
+      "context": {
+        "cs": "Alpine Pro / Český olympijský tým",
+        "en": "Alpine Pro / Czech Olympic team"
+      },
+      "meta": [
+        {
+          "label": {
+            "cs": "Role",
+            "en": "Role"
+          },
+          "value": {
+            "cs": "Fashion & Apparel Designer",
+            "en": "Fashion & Apparel Designer"
+          }
+        },
+        {
+          "label": {
+            "cs": "Spolupráce",
+            "en": "Collaboration"
+          },
+          "value": {
+            "cs": "Alpine Pro / Český olympijský tým / Milan Jaroš / Terezie Horňáková",
+            "en": "Alpine Pro / Czech Olympic team / Milan Jaroš / Terezie Horňáková"
+          }
+        },
+        {
+          "label": {
+            "cs": "Rok",
+            "en": "Year"
+          },
+          "value": {
+            "cs": "2025–2026",
+            "en": "2025–2026"
+          }
+        }
+      ],
+      "atmosphere": {
+        "bg": "#0B1A3A",
+        "fg": "#F4F2EE",
+        "muted": "#9AA6C2",
+        "accent": "#D7263D",
+        "accent2": "#E9D48A",
+        "dark": true
+      },
+      "text": "milano",
+      "hero": "look-01",
+      "card": "look-02",
+      "cardHover": "look-03",
+      "homeFeatured": "look-02",
+      "indexWords": {
+        "look-01": {
+          "cs": "oversize svetr, kraťasy",
+          "en": "oversize sweater, shorts"
+        },
+        "look-02": {
+          "cs": "oversize svetr",
+          "en": "oversize sweater"
+        },
+        "look-03": {
+          "cs": "huňatá šála",
+          "en": "shaggy scarf"
+        },
+        "look-10": {
+          "cs": "péřový kabát",
+          "en": "down coat"
+        },
+        "look-11": {
+          "cs": "oversize svetr, kraťasy, pletené punčochy",
+          "en": "oversize sweater, shorts, knitted tights"
+        },
+        "look-12": {
+          "cs": "oversize svetr",
+          "en": "oversize sweater"
+        },
+        "look-14": {
+          "cs": "oversize svetr",
+          "en": "oversize sweater"
+        }
+      },
+      "credits": [
+        {
+          "role": {
+            "cs": "Photo",
+            "en": "Photo"
+          },
+          "name": "Kristína Opálková",
+          "handle": "opaaalek"
+        },
+        {
+          "role": {
+            "cs": "Models",
+            "en": "Models"
+          },
+          "name": "Laura Vránová",
+          "handle": "laura_vranova"
+        },
+        {
+          "role": {
+            "cs": "Models",
+            "en": "Models"
+          },
+          "name": "Kryštof Bina",
+          "handle": "krystof.bina"
+        },
+        {
+          "role": {
+            "cs": "Models",
+            "en": "Models"
+          },
+          "name": "Nela Otáhalová",
+          "handle": "nela.otahal"
+        },
+        {
+          "role": {
+            "cs": "Footwear & accessories",
+            "en": "Footwear & accessories"
+          },
+          "name": "Terezie Horňáková",
+          "handle": "thornakova"
+        },
+        {
+          "role": {
+            "cs": "MUAH",
+            "en": "MUAH"
+          },
+          "name": "Michaela Kučerová",
+          "handle": "michaela_k_mua"
+        }
+      ],
+      "creditsLine": "Photo: Kristína Opálková @opaaalek · Models: Laura Vránová @laura_vranova, Kryštof Bina @krystof.bina, Nela Otáhalová @nela.otahal · Footwear & accessories: Terezie Horňáková @thornakova · MUAH: Michaela Kučerová @michaela_k_mua",
+      "gallery": {
+        "blocks": [
+          {
+            "type": "full",
+            "photos": [
+              "look-02"
+            ]
+          },
+          {
+            "type": "pair",
+            "photos": [
+              "look-03",
+              "look-04"
+            ]
+          },
+          {
+            "type": "transition",
+            "photos": [
+              "motion-01"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "look-05",
+              "look-06",
+              "look-07"
+            ]
+          },
+          {
+            "type": "full",
+            "photos": [
+              "look-10"
+            ]
+          },
+          {
+            "type": "pair",
+            "photos": [
+              "look-08",
+              "look-09"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "look-11",
+              "look-12",
+              "look-13"
+            ]
+          },
+          {
+            "type": "transition",
+            "photos": [
+              "motion-02"
+            ]
+          },
+          {
+            "type": "pair",
+            "photos": [
+              "look-14",
+              "look-15"
+            ]
+          },
+          {
+            "type": "full",
+            "photos": [
+              "look-16"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "look-17",
+              "look-18",
+              "look-19"
+            ]
+          }
+        ]
+      },
+      "media": {
+        "world": [
+          "https://www.seznamzpravy.cz/clanek/sport-olympiada-nastupova-kolekce-ceskych-olympioniku-patrila-podle-vanity-fair-k-nejlepsim-298382",
+          "https://www.olympijskytym.cz/article/ceska-nastupova-kolekce-opet-dobyla-svet-barvy-a-odvahu-chvali-vanity-fair-i-bbc",
+          "https://www.e15.cz/byznys/obchod-a-sluzby/ceska-olympijska-kolekce-budi-emoce-sportovci-dostali-palcaky-na-snure-a-vytapeni-do-kabatu-1430396",
+          "https://www.sportin.art/cs/detail-clanku/olympiada-2026-jak-vypada-kolekce-ktera-pokazde-rozdeli-narod"
+        ],
+        "ceremony": {
+          "label": {
+            "cs": "Slavnostní nástup české výpravy",
+            "en": "The Czech delegation's opening ceremony entrance"
+          },
+          "links": [
+            "https://www.irozhlas.cz/sport/zimni-sporty/obrazem-kasmir-s-ornamenty-i-perova-sukne-olympijske-uniformy-odrazi-narodni_2602051414_aru"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "new-breath-ss22",
+      "enSlug": "new-breath-ss22",
+      "code": "SS22",
+      "title": "NEW BREATH",
+      "subtitle": {
+        "cs": "Autorská kolekce, Mercedes-Benz Prague Fashion Week SS22",
+        "en": "Authorial collection, Mercedes-Benz Prague Fashion Week SS22"
+      },
+      "group": "selected",
+      "year": "",
+      "context": {
+        "cs": "MBPFW SS22",
+        "en": "MBPFW SS22"
+      },
+      "meta": [
+        {
+          "label": {
+            "cs": "Fashion show",
+            "en": "Fashion show"
+          },
+          "value": {
+            "cs": "Mercedes-Benz Prague Fashion Week SS22",
+            "en": "Mercedes-Benz Prague Fashion Week SS22"
+          }
+        },
+        {
+          "label": {
+            "cs": "Kolekce",
+            "en": "Collection"
+          },
+          "value": {
+            "cs": "Diplomová kolekce, UTB Zlín",
+            "en": "Master's collection, TBU Zlín"
+          }
+        }
+      ],
+      "atmosphere": {
+        "bg": "#F3C6CF",
+        "fg": "#1A1214",
+        "muted": "#6E4A54",
+        "accent": "#F5E3A1",
+        "accent2": "#7A1F2B",
+        "dark": false
+      },
+      "text": "newBreath",
+      "hero": "look-01",
+      "card": "look-06",
+      "cardHover": "look-01-back",
+      "frontBack": true,
+      "gallery": {
+        "blocks": [
+          {
+            "type": "pair",
+            "photos": [
+              "look-02",
+              "look-03"
+            ]
+          },
+          {
+            "type": "full",
+            "photos": [
+              "look-06"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "look-04",
+              "look-05",
+              "look-07"
+            ]
+          },
+          {
+            "type": "pair",
+            "photos": [
+              "look-08",
+              "look-09"
+            ]
+          },
+          {
+            "type": "full",
+            "photos": [
+              "look-11"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "look-10",
+              "look-12",
+              "look-13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "princess-fw19",
+      "enSlug": "princess-fw19",
+      "code": "FW19",
+      "title": "PRINCESS",
+      "subtitle": {
+        "cs": "Mercedes-Benz Prague Fashion Week FW19, prezentace UTB",
+        "en": "Mercedes-Benz Prague Fashion Week FW19, TBU presentation"
+      },
+      "group": "author",
+      "year": "2019",
+      "context": {
+        "cs": "MBPFW FW19 / UTB",
+        "en": "MBPFW FW19 / TBU"
+      },
+      "meta": [
+        {
+          "label": {
+            "cs": "Fashion show",
+            "en": "Fashion show"
+          },
+          "value": {
+            "cs": "Mercedes-Benz Prague Fashion Week FW19, prezentace UTB",
+            "en": "Mercedes-Benz Prague Fashion Week FW19, TBU presentation"
+          }
+        },
+        {
+          "label": {
+            "cs": "Rok",
+            "en": "Year"
+          },
+          "value": {
+            "cs": "2019",
+            "en": "2019"
+          }
+        }
+      ],
+      "atmosphere": {
+        "bg": "#0F1A12",
+        "fg": "#F4F2EE",
+        "muted": "#8FA394",
+        "accent": "#C9A3E6",
+        "accent2": "#FFFFFF",
+        "dark": true
+      },
+      "text": "princess",
+      "hero": "look-01",
+      "card": "look-01",
+      "cardHover": "look-02",
+      "gallery": {
+        "blocks": [
+          {
+            "type": "pair",
+            "photos": [
+              "look-02",
+              "look-03"
+            ]
+          },
+          {
+            "type": "full",
+            "photos": [
+              "look-06"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "look-04",
+              "look-05",
+              "look-08"
+            ]
+          },
+          {
+            "type": "transition",
+            "photos": [
+              "motion-01"
+            ]
+          },
+          {
+            "type": "full",
+            "photos": [
+              "look-07"
+            ]
+          },
+          {
+            "type": "pair",
+            "photos": [
+              "look-10",
+              "look-11"
+            ]
+          },
+          {
+            "type": "full",
+            "photos": [
+              "look-09"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "look-12",
+              "look-13",
+              "look-14"
+            ]
+          },
+          {
+            "type": "transition",
+            "photos": [
+              "motion-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "poisoned-mind",
+      "enSlug": "poisoned-mind",
+      "code": "BA",
+      "title": "POISONED MIND",
+      "subtitle": {
+        "cs": "Bakalářská kolekce",
+        "en": "Bachelor's collection"
+      },
+      "group": "author",
+      "year": "",
+      "context": {
+        "cs": "Bakalářská kolekce",
+        "en": "Bachelor's collection"
+      },
+      "meta": [
+        {
+          "label": {
+            "cs": "Kolekce",
+            "en": "Collection"
+          },
+          "value": {
+            "cs": "Bakalářská kolekce",
+            "en": "Bachelor's collection"
+          }
+        }
+      ],
+      "atmosphere": {
+        "bg": "#F4F2EE",
+        "fg": "#2B2450",
+        "muted": "#7A7A7A",
+        "accent": "#FF5A1F",
+        "accent2": "#2B2450",
+        "dark": false
+      },
+      "text": "poisonedMind",
+      "hero": "editorial-01",
+      "card": "editorial-01",
+      "cardHover": "editorial-03",
+      "frontBack": true,
+      "indexWords": {
+        "look-05": {
+          "cs": "drásaný materiál",
+          "en": "torn material"
+        },
+        "look-03": {
+          "cs": "dekonstrukce",
+          "en": "deconstruction"
+        },
+        "look-01": {
+          "cs": "svěrací kazajka",
+          "en": "straitjacket"
+        }
+      },
+      "details": [
+        "detail-01",
+        "detail-02",
+        "detail-03"
+      ],
+      "gallery": {
+        "blocks": [
+          {
+            "type": "pair",
+            "photos": [
+              "editorial-02",
+              "editorial-03"
+            ]
+          },
+          {
+            "type": "full",
+            "photos": [
+              "editorial-06"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "editorial-04",
+              "editorial-05",
+              "editorial-07"
+            ]
+          },
+          {
+            "type": "details",
+            "photos": [
+              "detail-01",
+              "detail-02",
+              "detail-03"
+            ]
+          },
+          {
+            "type": "pair",
+            "photos": [
+              "look-01",
+              "look-02"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "look-03",
+              "look-04",
+              "look-05"
+            ]
+          },
+          {
+            "type": "full",
+            "photos": [
+              "look-09"
+            ]
+          },
+          {
+            "type": "trio",
+            "photos": [
+              "look-06",
+              "look-07",
+              "look-08"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

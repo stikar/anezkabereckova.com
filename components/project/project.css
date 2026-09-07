@@ -1,0 +1,227 @@
+.fb {
+  position: relative;
+}
+.fb .fb-back {
+  opacity: 0;
+  transition: opacity 320ms var(--ease-atmosphere);
+}
+.fb[data-side='back'] .fb-back {
+  opacity: 1;
+}
+@media (hover: hover) and (pointer: fine) {
+  .fb:hover .fb-back {
+    opacity: 1;
+  }
+}
+
+.pcard .pcard-hover {
+  opacity: 0;
+  transition: opacity 450ms var(--ease-atmosphere);
+}
+.pcard .pcard-media {
+  transition: transform 700ms var(--ease-out-expo);
+}
+.pcard:hover .pcard-hover,
+.pcard:focus-visible .pcard-hover {
+  opacity: 1;
+}
+.pcard:hover .pcard-media,
+.pcard:focus-visible .pcard-media {
+  transform: scale(1.02);
+}
+
+.hotspot-ring {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1.5px solid #f4f2ee;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+  background: rgba(244, 242, 238, 0.08);
+  transition: background 200ms;
+}
+.hotspots.is-in .hotspot-ring {
+  animation: hotspot-pulse 1.4s var(--ease-out-expo) 1;
+}
+.hotspot:hover .hotspot-ring,
+.hotspot[aria-expanded='true'] .hotspot-ring,
+.hotspot:focus-visible .hotspot-ring {
+  background: rgba(244, 242, 238, 0.9);
+}
+.hotspot-label {
+  opacity: 0;
+  transform: translateY(4px);
+  transition:
+    opacity 150ms ease-out,
+    transform 150ms ease-out;
+  pointer-events: none;
+}
+.hotspot:hover .hotspot-label,
+.hotspot[aria-expanded='true'] .hotspot-label,
+.hotspot:focus-visible .hotspot-label {
+  opacity: 1;
+  transform: none;
+}
+@keyframes hotspot-pulse {
+  0% {
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.35),
+      0 0 0 0 rgba(244, 242, 238, 0.7);
+  }
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.35),
+      0 0 0 22px rgba(244, 242, 238, 0);
+  }
+}
+
+.story {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: #0e0e0e;
+  color: #f4f2ee;
+  touch-action: pan-x;
+}
+.story-track {
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+.story-track::-webkit-scrollbar {
+  display: none;
+}
+.story-slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.story-slide > .relative {
+  margin: 0 auto;
+  max-width: min(100%, calc(100svh * 2 / 3));
+}
+.story-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  border: 1px solid rgba(244, 242, 238, 0.4);
+  color: currentColor;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: opacity 200ms;
+}
+.story-arrow:disabled {
+  opacity: 0.25;
+}
+@media (hover: hover) and (pointer: fine) {
+  .story-arrow {
+    display: block;
+  }
+}
+
+.story button:focus-visible,
+.hotspot:focus-visible {
+  outline: 2px solid #f4f2ee;
+  outline-offset: 4px;
+}
+
+.hotspot-hint {
+  display: none;
+}
+@media (hover: none) {
+  .hotspot-hint {
+    display: block;
+  }
+}
+.story-progress span {
+  display: block;
+  height: 2px;
+  flex: 1;
+  background: rgba(244, 242, 238, 0.28);
+  overflow: hidden;
+}
+.story-progress span i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #f4f2ee;
+}
+.story-progress span[data-state='done'] i {
+  width: 100%;
+}
+.story-progress span[data-state='active'] i {
+  width: 100%;
+  animation: story-fill 420ms var(--ease-out-expo) 1;
+}
+@keyframes story-fill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.index-row {
+  display: grid;
+  grid-template-columns: 7rem 4rem 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--atm-line);
+  transition: opacity 200ms;
+}
+@media (min-width: 768px) {
+  .index-row {
+    grid-template-columns: 8rem 5rem 1.2fr 1fr 1.2fr;
+  }
+}
+.index-list:hover .index-row:not(:hover) {
+  opacity: 0.45;
+}
+.index-list {
+  position: relative;
+}
+
+.index-preview {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: min(18vw, 260px);
+  z-index: 30;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 250ms var(--ease-out-expo),
+    transform 250ms var(--ease-out-expo);
+}
+.index-preview.is-on {
+  opacity: 1;
+  transform: none;
+}
+
+.parallax-media {
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .parallax-media {
+    transform: none !important;
+  }
+  .hotspots.is-in .hotspot-ring,
+  .story-progress span[data-state='active'] i {
+    animation: none;
+  }
+}

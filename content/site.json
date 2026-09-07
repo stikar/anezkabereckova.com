@@ -1,0 +1,118 @@
+{
+  "name": "Anežka Berecková",
+  "nameUpper": "ANEŽKA BERECKOVÁ",
+  "monogram": "AB",
+  "domain": "https://anezkabereckova.com",
+  "email": "contact@anezkabereckova.com",
+  "instagram": "https://www.instagram.com/anezkabereckova/",
+  "instagramHandle": "@anezkabereckova",
+  "linkedin": "https://cz.linkedin.com/in/ane%C5%BEka-bereckov%C3%A1-b8370828a",
+  "city": {
+    "cs": "Praha",
+    "en": "Prague"
+  },
+  "cityLong": {
+    "cs": "Praha, Česká republika",
+    "en": "Prague, Czech Republic"
+  },
+  "tagline": {
+    "cs": "Fashion Designer / Apparel Designer",
+    "en": "Fashion Designer / Apparel Designer"
+  },
+  "role": {
+    "cs": "Fashion Designer / Apparel Designer",
+    "en": "Fashion Designer / Apparel Designer"
+  },
+  "nav": {
+    "cs": [
+      {
+        "href": "/projekty",
+        "label": "Projekty"
+      },
+      {
+        "href": "/prehlidky",
+        "label": "Přehlídky"
+      },
+      {
+        "href": "/o-mne",
+        "label": "O mně"
+      },
+      {
+        "href": "/press",
+        "label": "Press"
+      },
+      {
+        "href": "/kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "en": [
+      {
+        "href": "/en/projects",
+        "label": "Projects"
+      },
+      {
+        "href": "/en/shows",
+        "label": "Shows"
+      },
+      {
+        "href": "/en/about",
+        "label": "About"
+      },
+      {
+        "href": "/en/press",
+        "label": "Press"
+      },
+      {
+        "href": "/en/contact",
+        "label": "Contact"
+      }
+    ]
+  },
+  "routes": {
+    "home": {
+      "cs": "/",
+      "en": "/en"
+    },
+    "projects": {
+      "cs": "/projekty",
+      "en": "/en/projects"
+    },
+    "shows": {
+      "cs": "/prehlidky",
+      "en": "/en/shows"
+    },
+    "about": {
+      "cs": "/o-mne",
+      "en": "/en/about"
+    },
+    "press": {
+      "cs": "/press",
+      "en": "/en/press"
+    },
+    "contact": {
+      "cs": "/kontakt",
+      "en": "/en/contact"
+    }
+  },
+  "footer": {
+    "langs": {
+      "cs": "Čeština",
+      "en": "English"
+    }
+  },
+  "metaDescription": {
+    "cs": "Anežka Berecková je česká módní designérka. Působí v Alpine Pro a je autorkou oděvní části olympijské kolekce Českého olympijského týmu pro Milano Cortina 2026.",
+    "en": "Anežka Berecková is a Czech fashion designer. She works at Alpine Pro and designed the apparel of the Czech Olympic team's collection for Milano Cortina 2026."
+  },
+  "aktualne": {
+    "cs": {
+      "text": "",
+      "href": ""
+    },
+    "en": {
+      "text": "",
+      "href": ""
+    }
+  }
+}

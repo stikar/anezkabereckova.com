@@ -40,3 +40,12 @@ next-env.d.ts
 # playwright
 /test-results/
 /playwright-report/
+/sources
+
+# generated caches
+/.cache
+/content/generated/.photo-cache.json
+
+# generated at build (npm run generate / postbuild)
+/public/og
+/public/launch-kit

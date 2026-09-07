@@ -1,0 +1,93 @@
+{
+  "shows": [
+    {
+      "slug": "mbpfw-fw19",
+      "name": "Mercedes-Benz Prague Fashion Week",
+      "season": "FW19",
+      "city": {
+        "cs": "Praha",
+        "en": "Prague"
+      },
+      "year": "2019",
+      "note": {
+        "cs": "prezentace UTB",
+        "en": "TBU presentation"
+      },
+      "textKey": "shows.mbpfw",
+      "textParagraphs": [
+        0,
+        1
+      ],
+      "project": "princess-fw19",
+      "projectLabel": {
+        "cs": "PRINCESS FW19 →",
+        "en": "PRINCESS FW19 →"
+      },
+      "photos": [
+        "princess-fw19/look-02",
+        "princess-fw19/look-06"
+      ]
+    },
+    {
+      "slug": "mbpfw-ss22",
+      "name": "Mercedes-Benz Prague Fashion Week",
+      "season": "SS22",
+      "city": {
+        "cs": "Praha",
+        "en": "Prague"
+      },
+      "year": "",
+      "note": {
+        "cs": "",
+        "en": ""
+      },
+      "textKey": "shows.mbpfw",
+      "textParagraphs": [
+        2
+      ],
+      "project": "new-breath-ss22",
+      "projectLabel": {
+        "cs": "NEW BREATH SS22 →",
+        "en": "NEW BREATH SS22 →"
+      },
+      "photos": [
+        "new-breath-ss22/look-01",
+        "new-breath-ss22/look-06"
+      ]
+    },
+    {
+      "slug": "fashion-live-bratislava",
+      "name": "Fashion LIVE!",
+      "season": "",
+      "city": {
+        "cs": "Bratislava",
+        "en": "Bratislava"
+      },
+      "year": "",
+      "note": {
+        "cs": "",
+        "en": ""
+      },
+      "textKey": "shows.fashionLive",
+      "project": null,
+      "photos": []
+    },
+    {
+      "slug": "were-next",
+      "name": "WE’RE NEXT",
+      "season": "",
+      "city": {
+        "cs": "",
+        "en": ""
+      },
+      "year": "",
+      "note": {
+        "cs": "",
+        "en": ""
+      },
+      "textKey": "shows.wereNext",
+      "project": null,
+      "photos": []
+    }
+  ]
+}
