@@ -1,4 +1,4 @@
-name: E2E Production
+name: E2E
 
 on:
   schedule:
@@ -14,7 +14,6 @@ on:
 jobs:
   e2e:
     runs-on: ubuntu-latest
-    # 6 attempts x ~3 min worst case, plus install
     timeout-minutes: 30
 
     steps:
@@ -33,5 +32,17 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
+      - name: Build
+        if: github.event_name == 'pull_request'
+        run: npm run build
+
+      - name: Run E2E against the build
+        if: github.event_name == 'pull_request'
+        env:
+          E2E_LOCAL: '1'
+          E2E_BASE_URL: http://localhost:4173
+        run: npx playwright test --retries=2
+
       - name: Run E2E against production
+        if: github.event_name != 'pull_request'
         run: npx playwright test --retries=5
